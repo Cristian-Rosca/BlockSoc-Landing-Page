@@ -23,6 +23,10 @@ const Fonts = () => (
         font-family: 'Roobert TWHINT Bold';
         src: url('../public/fonts/Roobert-Bold.otf') format('opentype');
       }
+      @font-face {
+        font-family: 'Basis Grotesque Pro';
+        src: url('../public/fonts/BasisGrotesquePro-Bold.tff') format('truetype');
+      }
       
      
 
