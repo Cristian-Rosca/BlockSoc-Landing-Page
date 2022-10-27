@@ -13,7 +13,8 @@ const theme = extendTheme({
     })
   },
   fonts: {
-    heading: `'Sharp Grotesk'`,
+    heading: `Sharp Grotesk`,
+    body: "Roobert-Regular.tff"
   },
   
   
