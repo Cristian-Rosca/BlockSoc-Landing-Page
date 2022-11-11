@@ -1,7 +1,11 @@
 import type { AppProps } from 'next/app'
 import { Box, ChakraProvider, extendTheme } from '@chakra-ui/react'
-import background from "../public/background.png"
 import Fonts from '../components/Fonts'
+
+import "@fontsource/montserrat/400.css";
+import "@fontsource/montserrat/800.css";
+
+
 
 const theme = extendTheme({
   styles: {
@@ -14,8 +18,21 @@ const theme = extendTheme({
   },
   fonts: {
     heading: `Sharp Grotesk`,
-    body: "Roobert-Regular.tff"
   },
+
+  textStyles: { 
+    primary: {
+        fontFamily: `Montserrat`,
+        fontWeight: '400',
+    },
+    secondary: {
+        fontFamily: `Montserrat`,
+        fontWeight: '800',
+    },
+    
+    
+},
+  
   
   
       
