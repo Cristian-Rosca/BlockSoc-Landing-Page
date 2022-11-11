@@ -95,7 +95,7 @@ const Home: NextPage = () => {
               </Box>
               <Box display={"flex"} flexDirection={"row"} justifyContent={"start"}>
                 <Box display={"flex"} flexDirection={"column"} >
-                  <Heading mt={"1rem"} as='h4' size='l' mt={"2rem"}>Just want to hang out? Join our Discord</Heading>
+                  <Heading mt={"1rem"} as='h4' size='l' marginTop={"2rem"}>Just want to hang out? Join our Discord</Heading>
                   <Box display={"flex"} justifyContent={"start"} my={"1rem"}>
                     <Link href="https://discord.gg/YRKHzc7ymb" >
                       <a target="_blank">
