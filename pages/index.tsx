@@ -2,7 +2,12 @@ import { Box, Button, Container, Heading, Text } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import logo from "../public/bs-logo.png"
+import bs_logo from "../public/bs-logo.png"
+import daolens_logo from "../public/daolens.png"
+import moralis_logo from "../public/moralis.png"
+import cityDAO_logo from "../public/citydao.png"
+import discord_logo from "../public/discord.svg"
+import Link from 'next/link'
 
 
 const Home: NextPage = () => {
@@ -21,8 +26,8 @@ const Home: NextPage = () => {
             </Box>
           </Container>
           <Box mt={"10rem"} display={"flex"} justifyContent={"space-between"}>
-          <Text color={"rgba(255, 191, 0, 0.2)"}  fontSize={"120"} textAlign={"center"} >unching Soon</Text>
-          <Text color={"rgba(255, 191, 0, 0.2)"}  fontSize={"120"} textAlign={"center"} >Launching Soon</Text>
+            <Text color={"rgba(255, 191, 0, 0.2)"} fontSize={"120"} textAlign={"center"} >unching Soon</Text>
+            <Text color={"rgba(255, 191, 0, 0.2)"} fontSize={"120"} textAlign={"center"} >Launching Soon</Text>
           </Box>
           <Container mt={"10rem"} maxW='container.lg'>
             <Heading as='h2' size='3xl' textAlign={"center"} > How it works</Heading>
@@ -32,8 +37,8 @@ const Home: NextPage = () => {
             </Box>
           </Container>
           <Box mt={"10rem"} display={"flex"} justifyContent={"space-between"}>
-          <Text color={"rgba(255, 191, 0, 0.2)"}  fontSize={"120"} textAlign={"center"} ml={"12rem"} >Launching Soon</Text>
-          <Text color={"rgba(255, 191, 0, 0.2)"}  fontSize={"120"} textAlign={"center"} >Launching</Text>
+            <Text color={"rgba(255, 191, 0, 0.2)"} fontSize={"120"} textAlign={"center"} ml={"12rem"} >Launching Soon</Text>
+            <Text color={"rgba(255, 191, 0, 0.2)"} fontSize={"120"} textAlign={"center"} >Launching</Text>
           </Box>
           <Container mt={"10rem"} maxW='container.lg'>
             <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} alignItems={"center"}>
@@ -57,7 +62,7 @@ const Home: NextPage = () => {
                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
               </Box>
               <Box display={"flex"} flexDirection={"column"} flex={4}>
-                <Image src={logo} width={"200px"} height={"350px"} />
+                <Image src={discord_logo} width={"300px"} height={"300px"} />
               </Box>
 
             </Box>
@@ -66,9 +71,9 @@ const Home: NextPage = () => {
             <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} >
               <Heading as='h3' size='xl' textAlign={"center"} alignSelf={"center"} width={"80%"} mb={"2rem"}>Trusted by partners from across the globe</Heading>
               <Box display={"flex"} flexDirection={"row"} justifyContent={"space-between"}>
-                <Image src={logo} width={"100px"} height={"150px"} />
-                <Image src={logo} width={"100px"} height={"150px"} />
-                <Image src={logo} width={"100px"} height={"150px"} />
+                <Image src={daolens_logo} width={"177px"} height={"48px"} />
+                <Image src={moralis_logo} width={"177px"} height={"48px"} />
+                <Image src={cityDAO_logo} width={"177px"} height={"48px"} />
               </Box>
             </Box>
           </Container>
@@ -79,44 +84,50 @@ const Home: NextPage = () => {
                 <Box display={"flex"} flexDirection={"column"} >
                   <Heading mt={"1rem"} as='h4' size='l'>Student?</Heading>
                   <Text>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-                  <Button mt={"2rem"} width={"auto"} bgColor={"purple.600"} alignSelf={"start"}>Join BlockSocDAO</Button>
+                  <Button textStyle='primary' mt={"3rem"} width={"auto"} p={"1.5rem"} bgColor={"purple.600"} alignSelf={"start"} >Join BlockSocDAO</Button>
                 </Box>
                 <Box display={"flex"} flexDirection={"column"} >
                   <Heading mt={"1rem"} as='h4' size='l' >Company?</Heading>
                   <Text>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-                  <Button mt={"2rem"} width={"auto"} bgColor={"purple.600"} alignSelf={"start"}>Join BlockSocDAO</Button>
+                  <Button textStyle='primary' mt={"3rem"} width={"auto"} p={"1.5rem"} bgColor={"purple.600"} alignSelf={"start"} >Join BlockSocDAO</Button>
                 </Box>
 
               </Box>
               <Box display={"flex"} flexDirection={"row"} justifyContent={"start"}>
                 <Box display={"flex"} flexDirection={"column"} >
                   <Heading mt={"1rem"} as='h4' size='l' mt={"2rem"}>Just want to hang out? Join our Discord</Heading>
-                  <Button width={"auto"} bgColor={"purple.600"} mb={"2rem"} mt={"1rem"} alignSelf={"start"}>Join Discord</Button>
+                  <Box display={"flex"} justifyContent={"start"} my={"1rem"}>
+                    <Link href="https://discord.gg/YRKHzc7ymb" >
+                      <a target="_blank">
+                        <Image src={discord_logo} height={"50px"} width={"50px"} />
+                      </a>
+                    </Link>
+                  </Box>
                 </Box>
               </Box>
             </Box>
           </Container>
           <Box mt={"10rem"} display={"flex"} justifyContent={"space-between"}>
-          <Text color={"rgba(255, 191, 0, 0.2)"}  fontSize={"120"} textAlign={"center"} >g Soon</Text>
-          <Text color={"rgba(255, 191, 0, 0.2)"}  fontSize={"120"} textAlign={"center"} mr={"20rem"} >Launching Soon</Text>
+            <Text color={"rgba(255, 191, 0, 0.2)"} fontSize={"120"} textAlign={"center"} >g Soon</Text>
+            <Text color={"rgba(255, 191, 0, 0.2)"} fontSize={"120"} textAlign={"center"} mr={"20rem"} >Launching Soon</Text>
           </Box>
           <Container mt={"10rem"} maxW='container.lg' >
             <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} alignItems={"center"}>
               <Heading as='h2' size='3xl' textAlign={"center"} >Types of NFTs</Heading>
               <Text width={"60%"} textAlign={"center"} mt={"1rem"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </Text>
+            </Box>
+            <Box display={"flex"} flexDirection={"row"} justifyContent={"space-evenly"} gap={"4rem"}>
+              <Box mt={"5rem"} display={"flex"} flexDirection={"column"} bg={"rgba(52, 52, 52, 0.2)"} p={"3rem"}>
+                <Image src={discord_logo} width={"150px"} height={"150px"} />
+                <Heading mt={"3rem"} as='h4' size='l' >Dynamic NFT for students</Heading>
               </Box>
-              <Box display={"flex"} flexDirection={"row"} justifyContent={"space-evenly"} gap={"4rem"}>
-                <Box mt={"5rem"} display={"flex"} flexDirection={"column"} bg={"rgba(52, 52, 52, 0.2)"} p={"3rem"}>
-                  <Image src={logo} width={"100px"} height={"150px"} />
-                  <Heading mt={"1rem"} as='h4' size='l' >Dynamic NFT for students</Heading>
-                </Box>
-                <Box mt={"5rem"} display={"flex"} flexDirection={"column"} bg={"rgba(52, 52, 52, 0.2)"} p={"3rem"}>
-                  <Image src={logo} width={"100px"} height={"150px"} />
-                  <Heading mt={"1rem"} as='h4' size='l' >Resource NFT for companies</Heading>
-                </Box>
+              <Box mt={"5rem"} display={"flex"} flexDirection={"column"} bg={"rgba(52, 52, 52, 0.2)"} p={"3rem"}>
+                <Image src={discord_logo} width={"150px"} height={"150px"} />
+                <Heading mt={"3rem"} as='h4' size='l' >Resource NFT for companies</Heading>
               </Box>
-            
+            </Box>
+
           </Container>
         </Box>
       </Box>
