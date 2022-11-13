@@ -46,11 +46,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Fonts />
-      <Navbar />
+
       <Box bgImage="../background.png" bgPosition="start" bgRepeat="repeat">
+      <Navbar />
         <Component  {...pageProps} />
-      </Box>
       <Footer />
+      </Box>
     </ChakraProvider>
   )
 }
