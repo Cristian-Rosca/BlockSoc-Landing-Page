@@ -8,7 +8,7 @@ import bs_logo from "../public/bs-logo.png"
 const Navbar = () => {
     return (
         <nav >
-            <Box display={"flex"} justifyContent={"space-between"} alignItems={"center"} pt={"1rem"} pb={"1rem"} bg={"black"} opacity={0.75}>
+            <Box display={"flex"} justifyContent={"space-between"} alignItems={"center"} pt={"1rem"} pb={"1rem"} bg={"rgba(0, 0, 0, 0.75)"}>
                 <Box display={"flex"} ml={"2rem"} >
                     <Link href="/">
                         <a>

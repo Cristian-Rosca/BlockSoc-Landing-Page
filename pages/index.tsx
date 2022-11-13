@@ -19,7 +19,7 @@ const Home: NextPage = () => {
             <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} alignItems={"center"}>
 
               <Heading as='h1' size='4xl' lineHeight={"1.3"} textAlign={"center"}> Bridging the Web 3.0 talent gap</Heading>
-              <Text textStyle='primary' width={"60%"} textAlign={"center"} mt={"1rem"}>BlockSocDAO is the gateway for students entering into Web3 and the ideal platform for employers seeking to discover innovative Web3.0 talent
+              <Text textStyle='primary' fontSize={"19"} width={"90%"} textAlign={"center"} mt={"1rem"}>BlockSocDAO is the gateway for students entering into Web3 and the ideal platform for employers seeking to discover innovative Web3.0 talent
               </Text>
               <Button textStyle='primary' mt={"3rem"} width={"auto"} p={"2rem"} bgColor={"purple.600"}>Join BlockSocDAO</Button>
             </Box>
@@ -31,8 +31,8 @@ const Home: NextPage = () => {
           <Container mt={"10rem"} maxW='container.lg'>
             <Heading as='h2' size='3xl' textAlign={"center"} > How it works</Heading>
             <Box mt={10} display={"flex"} flexDirection={"row"} justifyContent={"center"}>
-              <Button mr={7} textStyle='primary' variant={"link"}>For Students</Button>
-              <Button textStyle='primary' variant={"link"} >For Companies</Button>
+              <Button mr={7} fontSize={"22"} textStyle='primary' variant={"link"}>For Students</Button>
+              <Button textStyle='primary' fontSize={"22"} variant={"link"} >For Companies</Button>
             </Box>
           </Container>
           <Box mt={"10rem"} display={"flex"} justifyContent={"space-between"}>
@@ -42,21 +42,21 @@ const Home: NextPage = () => {
           <Container mt={"10rem"} maxW='container.lg'>
             <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} alignItems={"center"}>
               <Heading as='h2' size='3xl' textAlign={"center"} >A student-first platform</Heading>
-              <Text textStyle='primary' width={"60%"} textAlign={"center"} mt={"1rem"}>BlockSocDAO is a student-first platform and we want to do everything right for the new generation of innovators.
+              <Text textStyle='primary' fontSize={"19"} width={"60%"} textAlign={"center"} mt={"1rem"}>BlockSocDAO is a student-first platform and we want to do everything right for the new generation of innovators.
               </Text>
             </Box>
           </Container>
           <Container mt={"10rem"} maxW='100%'>
-            <Box display={"flex"} flexDirection={"row"} justifyContent={"space-around"}>
+            <Box display={"flex"} flexDirection={"row"} justifyContent={"space-around"} alignItems={"center"}>
               <Box display={"flex"} flexDirection={"column"} flex={2} justifyContent={"flex-start"} alignItems={"flex-start"}>
-                <Text textStyle='primary' ml={"10rem"} mt={10} >Education</Text>
-                <Text textStyle='secondary' ml={"10rem"} mt={10} color={"purple.600"}>Bounties</Text>
-                <Text ml={"10rem"} textStyle='primary' mt={10}>Web 3.0 Job Portals</Text>
-                <Text ml={"10rem"} textStyle='primary' mt={10}>Community</Text>
+                <Text textStyle='primary' fontSize={"19"} ml={"5rem"} mt={10} >Education</Text>
+                <Text textStyle='secondary' fontSize={"19"} ml={"5rem"} mt={10} color={"purple.600"}>Bounties</Text>
+                <Text ml={"5rem"} fontSize={"19"} textStyle='primary' mt={10}>Web 3.0 Job Portals</Text>
+                <Text ml={"5rem"} fontSize={"19"} textStyle='primary' mt={10}>Community</Text>
               </Box>
               <Box display={"flex"} flexDirection={"column"} flex={3}>
                 <Heading as='h2' size='3xl' textAlign={"center"}>Bounties</Heading >
-                <Text textStyle='primary' mt={10}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <Text textStyle='primary' fontSize={"19"} mt={10}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   {<br />} {<br />}
                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
               </Box>
@@ -78,23 +78,23 @@ const Home: NextPage = () => {
           </Container>
           <Container mt={"10rem"} maxW='container.xl' bg={"#3D00EE"}>
             <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} >
-              <Heading mt={"2rem"} as='h2' size='3xl' textAlign={"center"} >Help us build the next frontier of Web 3.0 talent.</Heading>
+              <Heading pt={"5rem"} px={"3rem"}as='h2' size='3xl' textAlign={"start"} >Help us build the next frontier of Web 3.0 talent.</Heading>
               <Box display={"flex"} flexDirection={"row"} justifyContent={"space-evenly"} gap={"4rem"} mt={"3rem"}>
-                <Box display={"flex"} flexDirection={"column"} >
-                  <Heading mt={"1rem"} as='h4' size='l'>Student?</Heading>
-                  <Text textStyle='primary'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+                <Box display={"flex"} flexDirection={"column"} px={"3rem"}>
+                  <Heading mt={"1rem"} as='h4' fontSize={"26"}>Student?</Heading>
+                  <Text textStyle='primary' fontSize={"19"}>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
                   <Button textStyle='primary' mt={"3rem"} width={"auto"} p={"1.5rem"} bgColor={"purple.600"} alignSelf={"start"} >Join BlockSocDAO</Button>
                 </Box>
-                <Box display={"flex"} flexDirection={"column"} >
-                  <Heading mt={"1rem"} as='h4' size='l' >Company?</Heading>
-                  <Text textStyle='primary'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+                <Box display={"flex"} flexDirection={"column"} px={"3rem"}>
+                  <Heading mt={"1rem"} as='h4' fontSize={"26"} >Company?</Heading>
+                  <Text textStyle='primary' fontSize={"19"} >Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
                   <Button textStyle='primary' mt={"3rem"} width={"auto"} p={"1.5rem"} bgColor={"purple.600"} alignSelf={"start"} >Join BlockSocDAO</Button>
                 </Box>
 
               </Box>
-              <Box display={"flex"} flexDirection={"row"} justifyContent={"start"}>
+              <Box display={"flex"} flexDirection={"row"} justifyContent={"start"} px={"3rem"} pt={"3rem"} pb={"2rem"}>
                 <Box display={"flex"} flexDirection={"column"} >
-                  <Heading mt={"1rem"} as='h4' size='l' marginTop={"2rem"}>Just want to hang out? Join our Discord</Heading>
+                  <Heading mt={"1rem"} as='h4' fontSize={"24"} marginTop={"2rem"}>Just want to hang out? Join our Discord</Heading>
                   <Box display={"flex"} justifyContent={"start"} my={"1rem"}>
                     <Link href="https://discord.gg/YRKHzc7ymb" >
                       <a target="_blank">
@@ -113,7 +113,7 @@ const Home: NextPage = () => {
           <Container mt={"10rem"} maxW='container.lg' >
             <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} alignItems={"center"}>
               <Heading as='h2' size='3xl' textAlign={"center"} >Types of NFTs</Heading>
-              <Text textStyle='primary' width={"60%"} textAlign={"center"} mt={"1rem"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <Text textStyle='primary'  textAlign={"center"} mt={"1rem"} fontSize={"19"} >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </Text>
             </Box>
             <Box mb={"5rem"} display={"flex"} flexDirection={"row"} justifyContent={"space-evenly"} gap={"4rem"}>
