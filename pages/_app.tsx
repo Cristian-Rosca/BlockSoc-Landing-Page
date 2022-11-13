@@ -4,6 +4,8 @@ import Fonts from '../components/Fonts'
 
 import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/800.css";
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 
 
@@ -20,33 +22,35 @@ const theme = extendTheme({
     heading: `Sharp Grotesk`,
   },
 
-  textStyles: { 
+  textStyles: {
     primary: {
-        fontFamily: `Montserrat`,
-        fontWeight: '400',
+      fontFamily: `Montserrat`,
+      fontWeight: '400',
     },
     secondary: {
-        fontFamily: `Montserrat`,
-        fontWeight: '800',
+      fontFamily: `Montserrat`,
+      fontWeight: '800',
     },
-    
-    
-},
-  
-  
-  
-      
-      
-  
+
+
+  },
+
+
+
+
+
+
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-        <Fonts/>
-        <Box bgImage="../background.png" bgPosition="center" bgRepeat="repeat">
+      <Fonts />
+      <Navbar />
+      <Box bgImage="../background.png" bgPosition="start" bgRepeat="repeat">
         <Component  {...pageProps} />
-        </Box>
+      </Box>
+      <Footer />
     </ChakraProvider>
   )
 }
