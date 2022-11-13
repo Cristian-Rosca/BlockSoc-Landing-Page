@@ -25,8 +25,8 @@ const Home: NextPage = () => {
             </Box>
           </Container>
           <Box mt={"10rem"} display={"flex"} justifyContent={"space-between"}>
-            <Text opacity={"0.2"} color={"#FFBF00"} fontSize={"115"} fontWeight={"600"}>unching Soon</Text>
-            <Text  opacity={"0.2"} color={"#FFBF00"} fontSize={"115"} fontWeight={"600"}>Launching Soon</Text>
+            <Text opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>unching Soon</Text>
+            <Text  opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>Launching Soon</Text>
           </Box>
           <Container mt={"10rem"} maxW='container.lg'>
             <Heading as='h2' size='3xl' textAlign={"center"} > How it works</Heading>
@@ -36,8 +36,8 @@ const Home: NextPage = () => {
             </Box>
           </Container>
           <Box mt={"10rem"} display={"flex"} justifyContent={"space-between"}>
-            <Text  opacity={"0.2"} color={"#FFBF00"} fontSize={"115"} fontWeight={"600"} ml={"12rem"} >Launching Soon</Text>
-            <Text  opacity={"0.2"} color={"#FFBF00"} fontSize={"115"} fontWeight={"600"}>Launching</Text>
+            <Text  opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"} ml={"12rem"} >Launching Soon</Text>
+            <Text  opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>Launching</Text>
           </Box>
           <Container mt={"10rem"} maxW='container.lg'>
             <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} alignItems={"center"}>
@@ -107,8 +107,8 @@ const Home: NextPage = () => {
             </Box>
           </Container>
           <Box mt={"10rem"} display={"flex"} justifyContent={"space-between"}>
-            <Text  opacity={"0.2"}  color={"#FFBF00"} fontSize={"115"} fontWeight={"600"}>g Soon</Text>
-            <Text  opacity={"0.2"} color={"#FFBF00"} fontSize={"115"} fontWeight={"600"}>Launching Soon</Text>
+            <Text  opacity={"0.2"}  color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>g Soon</Text>
+            <Text  opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>Launching Soon</Text>
           </Box>
           <Container mt={"10rem"} maxW='container.lg' >
             <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} alignItems={"center"}>
