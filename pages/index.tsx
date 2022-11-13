@@ -2,7 +2,6 @@ import { Box, Button, Container, Heading, Text } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import bs_logo from "../public/bs-logo.png"
 import daolens_logo from "../public/daolens.png"
 import moralis_logo from "../public/moralis.png"
 import cityDAO_logo from "../public/citydao.png"
@@ -26,38 +25,38 @@ const Home: NextPage = () => {
             </Box>
           </Container>
           <Box mt={"10rem"} display={"flex"} justifyContent={"space-between"}>
-            <Text color={"rgba(255, 191, 0, 0.2)"} fontSize={"120"} textAlign={"center"} >unching Soon</Text>
-            <Text color={"rgba(255, 191, 0, 0.2)"} fontSize={"120"} textAlign={"center"} >Launching Soon</Text>
+            <Text opacity={"0.2"} color={"#FFBF00"} fontSize={"115"} fontWeight={"600"}>unching Soon</Text>
+            <Text  opacity={"0.2"} color={"#FFBF00"} fontSize={"115"} fontWeight={"600"}>Launching Soon</Text>
           </Box>
           <Container mt={"10rem"} maxW='container.lg'>
             <Heading as='h2' size='3xl' textAlign={"center"} > How it works</Heading>
             <Box mt={10} display={"flex"} flexDirection={"row"} justifyContent={"center"}>
-              <Button mr={7} variant={"link"}>For Students</Button>
-              <Button variant={"link"} >For Companies</Button>
+              <Button mr={7} textStyle='primary' variant={"link"}>For Students</Button>
+              <Button textStyle='primary' variant={"link"} >For Companies</Button>
             </Box>
           </Container>
           <Box mt={"10rem"} display={"flex"} justifyContent={"space-between"}>
-            <Text color={"rgba(255, 191, 0, 0.2)"} fontSize={"120"} textAlign={"center"} ml={"12rem"} >Launching Soon</Text>
-            <Text color={"rgba(255, 191, 0, 0.2)"} fontSize={"120"} textAlign={"center"} >Launching</Text>
+            <Text  opacity={"0.2"} color={"#FFBF00"} fontSize={"115"} fontWeight={"600"} ml={"12rem"} >Launching Soon</Text>
+            <Text  opacity={"0.2"} color={"#FFBF00"} fontSize={"115"} fontWeight={"600"}>Launching</Text>
           </Box>
           <Container mt={"10rem"} maxW='container.lg'>
             <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} alignItems={"center"}>
               <Heading as='h2' size='3xl' textAlign={"center"} >A student-first platform</Heading>
-              <Text width={"60%"} textAlign={"center"} mt={"1rem"}>BlockSocDAO is a student-first platform and we want to do everything right for the new generation of innovators.
+              <Text textStyle='primary' width={"60%"} textAlign={"center"} mt={"1rem"}>BlockSocDAO is a student-first platform and we want to do everything right for the new generation of innovators.
               </Text>
             </Box>
           </Container>
           <Container mt={"10rem"} maxW='100%'>
             <Box display={"flex"} flexDirection={"row"} justifyContent={"space-around"}>
               <Box display={"flex"} flexDirection={"column"} flex={2} justifyContent={"flex-start"} alignItems={"flex-start"}>
-                <Text ml={"10rem"} mt={10} >Education</Text>
-                <Text fontWeight={"bold"} ml={"10rem"} mt={10} color={"purple.600"}>Bounties</Text>
-                <Text ml={"10rem"} mt={10}>Web 3.0 Job Portals</Text>
-                <Text ml={"10rem"} mt={10}>Community</Text>
+                <Text textStyle='primary' ml={"10rem"} mt={10} >Education</Text>
+                <Text textStyle='secondary' ml={"10rem"} mt={10} color={"purple.600"}>Bounties</Text>
+                <Text ml={"10rem"} textStyle='primary' mt={10}>Web 3.0 Job Portals</Text>
+                <Text ml={"10rem"} textStyle='primary' mt={10}>Community</Text>
               </Box>
               <Box display={"flex"} flexDirection={"column"} flex={3}>
                 <Heading as='h2' size='3xl' textAlign={"center"}>Bounties</Heading >
-                <Text mt={10}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <Text textStyle='primary' mt={10}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   {<br />} {<br />}
                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
               </Box>
@@ -83,12 +82,12 @@ const Home: NextPage = () => {
               <Box display={"flex"} flexDirection={"row"} justifyContent={"space-evenly"} gap={"4rem"} mt={"3rem"}>
                 <Box display={"flex"} flexDirection={"column"} >
                   <Heading mt={"1rem"} as='h4' size='l'>Student?</Heading>
-                  <Text>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+                  <Text textStyle='primary'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
                   <Button textStyle='primary' mt={"3rem"} width={"auto"} p={"1.5rem"} bgColor={"purple.600"} alignSelf={"start"} >Join BlockSocDAO</Button>
                 </Box>
                 <Box display={"flex"} flexDirection={"column"} >
                   <Heading mt={"1rem"} as='h4' size='l' >Company?</Heading>
-                  <Text>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+                  <Text textStyle='primary'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
                   <Button textStyle='primary' mt={"3rem"} width={"auto"} p={"1.5rem"} bgColor={"purple.600"} alignSelf={"start"} >Join BlockSocDAO</Button>
                 </Box>
 
@@ -108,13 +107,13 @@ const Home: NextPage = () => {
             </Box>
           </Container>
           <Box mt={"10rem"} display={"flex"} justifyContent={"space-between"}>
-            <Text color={"rgba(255, 191, 0, 0.2)"} fontSize={"120"} textAlign={"center"} >g Soon</Text>
-            <Text color={"rgba(255, 191, 0, 0.2)"} fontSize={"120"} textAlign={"center"} mr={"20rem"} >Launching Soon</Text>
+            <Text  opacity={"0.2"}  color={"#FFBF00"} fontSize={"115"} fontWeight={"600"}>g Soon</Text>
+            <Text  opacity={"0.2"} color={"#FFBF00"} fontSize={"115"} fontWeight={"600"}>Launching Soon</Text>
           </Box>
           <Container mt={"10rem"} maxW='container.lg' >
             <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} alignItems={"center"}>
               <Heading as='h2' size='3xl' textAlign={"center"} >Types of NFTs</Heading>
-              <Text width={"60%"} textAlign={"center"} mt={"1rem"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <Text textStyle='primary' width={"60%"} textAlign={"center"} mt={"1rem"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </Text>
             </Box>
             <Box mb={"5rem"} display={"flex"} flexDirection={"row"} justifyContent={"space-evenly"} gap={"4rem"}>

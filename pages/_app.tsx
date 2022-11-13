@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
 import { Box, ChakraProvider, extendTheme } from '@chakra-ui/react'
 import Fonts from '../components/Fonts'
-
+import "@fontsource/source-code-pro/"
 import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/800.css";
 import Navbar from '../components/Navbar';
@@ -31,8 +31,6 @@ const theme = extendTheme({
       fontFamily: `Montserrat`,
       fontWeight: '800',
     },
-
-
   },
 
 
