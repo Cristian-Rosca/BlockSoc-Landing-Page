@@ -1,4 +1,4 @@
-import { Box, Button, Container, Heading, Text } from '@chakra-ui/react'
+import { Box, Button, Container, Divider, Heading, Text } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           </Container>
           <Box mt={"10rem"} display={"flex"} justifyContent={"space-between"}>
             <Text opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>unching Soon</Text>
-            <Text  opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>Launching Soon</Text>
+            <Text opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>Launching Soon</Text>
           </Box>
           <Container mt={"10rem"} maxW='container.lg'>
             <Heading as='h2' size='3xl' textAlign={"center"} > How it works</Heading>
@@ -34,12 +34,60 @@ const Home: NextPage = () => {
               <Button mr={7} fontSize={"22"} textStyle='primary' variant={"link"}>For Students</Button>
               <Button textStyle='primary' fontSize={"22"} variant={"link"} >For Companies</Button>
             </Box>
+
+          {/* Full Section */}
+            <Box display={"flex"} justifyContent={"space-apart"} mt={"5rem"}>
+              {/* Left Side Section */}
+              <Box display={"flex"} flexDirection={"column"} justifyContent={"space-evenly"} >
+                <Box display={"flex"}>
+                <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"2rem"} width={"11rem"}>
+                  <Image src={discord_logo} width={"100px"} height={"100px"} />
+                  <Text pt={"2rem"} textStyle='secondary' fontSize={"20"}>Bounties</Text>
+                </Box>
+                <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
+                <Divider orientation='horizontal' width={"11rem"} />
+                </Box>
+                </Box>
+
+                <Box display={"flex"}>
+                <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"2rem"} width={"11rem"}>
+                  <Image src={discord_logo} width={"100px"} height={"100px"} />
+                  <Text textStyle='secondary' fontSize={"20"} pt={"2rem"} >Education</Text>
+                </Box>
+                <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
+                <Divider orientation='horizontal' width={"11rem"} />
+                </Box>
+                </Box>
+              </Box>
+              {/* Middle Section */}
+              <Box display={"flex"} flexDirection={"column"} bg={"rgba(52, 52, 52, 0.2)"} height={"40rem"} width={"30rem"} alignItems={"center"} justifyContent={"center"}>
+                <Box display={"flex"} justifyContent={"center"} alignItems={"center"} >
+                <Image src={discord_logo} width={"200px"} height={"200px"} />
+                </Box>
+                <Box display={"flex"} justifyContent={"center"} alignItems={"center"} mt={"6rem"} width={"80%"}>
+                <Text textAlign={"center"} textStyle='secondary' fontSize={"20"}>Verifiable On-Chain Resumes</Text>
+                </Box>
+              </Box>
+              {/* Right Side Section */}
+              <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
+              <Box display={"flex"}>
+                <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} >
+                <Divider orientation='horizontal' width={"11rem"} />
+                </Box>
+                <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"2rem"} width={"11rem"}>
+                  <Image src={discord_logo} width={"100px"} height={"100px"} />
+                  <Text pt={"2rem"} textStyle='secondary' fontSize={"20"}>Web3 Jobs</Text>
+                </Box>
+                </Box>
+              </Box>
+
+            </Box>
           </Container>
-          <Box mt={"10rem"} display={"flex"} justifyContent={"space-between"}>
-            <Text  opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"} ml={"12rem"} >Launching Soon</Text>
-            <Text  opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>Launching</Text>
+          <Box mt={"11rem"} display={"flex"} justifyContent={"space-between"}>
+            <Text opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"} ml={"11rem"} >Launching Soon</Text>
+            <Text opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>Launching</Text>
           </Box>
-          <Container mt={"10rem"} maxW='container.lg'>
+          <Container mt={"11rem"} maxW='container.lg'>
             <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} alignItems={"center"}>
               <Heading as='h2' size='3xl' textAlign={"center"} >A student-first platform</Heading>
               <Text textStyle='primary' fontSize={"19"} width={"60%"} textAlign={"center"} mt={"1rem"}>BlockSocDAO is a student-first platform and we want to do everything right for the new generation of innovators.
@@ -78,7 +126,7 @@ const Home: NextPage = () => {
           </Container>
           <Container mt={"10rem"} maxW='container.xl' bg={"#3D00EE"}>
             <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} >
-              <Heading pt={"5rem"} px={"3rem"}as='h2' size='3xl' textAlign={"start"} >Help us build the next frontier of Web 3.0 talent.</Heading>
+              <Heading pt={"5rem"} px={"3rem"} as='h2' size='3xl' textAlign={"start"} >Help us build the next frontier of Web 3.0 talent.</Heading>
               <Box display={"flex"} flexDirection={"row"} justifyContent={"space-evenly"} gap={"4rem"} mt={"3rem"}>
                 <Box display={"flex"} flexDirection={"column"} px={"3rem"}>
                   <Heading mt={"1rem"} as='h4' fontSize={"26"}>Student?</Heading>
@@ -107,13 +155,13 @@ const Home: NextPage = () => {
             </Box>
           </Container>
           <Box mt={"10rem"} display={"flex"} justifyContent={"space-between"}>
-            <Text  opacity={"0.2"}  color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>g Soon</Text>
-            <Text  opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>Launching Soon</Text>
+            <Text opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>g Soon</Text>
+            <Text opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>Launching Soon</Text>
           </Box>
           <Container mt={"10rem"} maxW='container.lg' >
             <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} alignItems={"center"}>
               <Heading as='h2' size='3xl' textAlign={"center"} >Types of NFTs</Heading>
-              <Text textStyle='primary'  textAlign={"center"} mt={"1rem"} fontSize={"19"} >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <Text textStyle='primary' textAlign={"center"} mt={"1rem"} fontSize={"19"} >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </Text>
             </Box>
             <Box mb={"5rem"} display={"flex"} flexDirection={"row"} justifyContent={"space-evenly"} gap={"4rem"}>
