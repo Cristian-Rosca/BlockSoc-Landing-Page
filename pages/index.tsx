@@ -7,12 +7,16 @@ import moralis_logo from "../public/moralis.png"
 import cityDAO_logo from "../public/citydao.png"
 import discord_logo from "../public/discord.svg"
 import Link from 'next/link'
-
+import HowItWorksStudents from '../components/HowItWorksStudents'
+import HowItWorksCompany from '../components/HowItWorksCompany'
+import React, { useEffect, useState } from "react";
 
 const Home: NextPage = () => {
+  
+const [howItWorksDisplay, setHowItWorksDisplay] = useState<string>("Company")
+  
   return (
     <>
-
       <Box display={"flex"} flexDirection={"row"} justifyContent={"center"}>
         <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} >
           <Container mt={"10rem"} maxW='container.lg'>
@@ -31,57 +35,11 @@ const Home: NextPage = () => {
           <Container mt={"10rem"} maxW='container.lg'>
             <Heading as='h2' size='3xl' textAlign={"center"} > How it works</Heading>
             <Box mt={10} display={"flex"} flexDirection={"row"} justifyContent={"center"}>
-              <Button mr={7} fontSize={"22"} textStyle='primary' variant={"link"}>For Students</Button>
-              <Button textStyle='primary' fontSize={"22"} variant={"link"} >For Companies</Button>
+              <Button mr={7} fontSize={"22"} textStyle='primary' variant={"link"} onClick={()=>setHowItWorksDisplay("Students")}>For Students</Button>
+              <Button textStyle='primary' fontSize={"22"} variant={"link"} onClick={()=>setHowItWorksDisplay("Company")}>For Companies</Button>
             </Box>
-
-          {/* Full Section */}
-            <Box display={"flex"} justifyContent={"space-apart"} mt={"5rem"}>
-              {/* Left Side Section */}
-              <Box display={"flex"} flexDirection={"column"} justifyContent={"space-evenly"} >
-                <Box display={"flex"}>
-                <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"2rem"} width={"11rem"}>
-                  <Image src={discord_logo} width={"100px"} height={"100px"} />
-                  <Text pt={"2rem"} textStyle='secondary' fontSize={"20"}>Bounties</Text>
-                </Box>
-                <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
-                <Divider orientation='horizontal' width={"11rem"} />
-                </Box>
-                </Box>
-
-                <Box display={"flex"}>
-                <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"2rem"} width={"11rem"}>
-                  <Image src={discord_logo} width={"100px"} height={"100px"} />
-                  <Text textStyle='secondary' fontSize={"20"} pt={"2rem"} >Education</Text>
-                </Box>
-                <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
-                <Divider orientation='horizontal' width={"11rem"} />
-                </Box>
-                </Box>
-              </Box>
-              {/* Middle Section */}
-              <Box display={"flex"} flexDirection={"column"} bg={"rgba(52, 52, 52, 0.2)"} height={"40rem"} width={"30rem"} alignItems={"center"} justifyContent={"center"}>
-                <Box display={"flex"} justifyContent={"center"} alignItems={"center"} >
-                <Image src={discord_logo} width={"200px"} height={"200px"} />
-                </Box>
-                <Box display={"flex"} justifyContent={"center"} alignItems={"center"} mt={"6rem"} width={"80%"}>
-                <Text textAlign={"center"} textStyle='secondary' fontSize={"20"}>Verifiable On-Chain Resumes</Text>
-                </Box>
-              </Box>
-              {/* Right Side Section */}
-              <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
-              <Box display={"flex"}>
-                <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} >
-                <Divider orientation='horizontal' width={"11rem"} />
-                </Box>
-                <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"2rem"} width={"11rem"}>
-                  <Image src={discord_logo} width={"100px"} height={"100px"} />
-                  <Text pt={"2rem"} textStyle='secondary' fontSize={"20"}>Web3 Jobs</Text>
-                </Box>
-                </Box>
-              </Box>
-
-            </Box>
+            {(howItWorksDisplay == "Students") ?  <HowItWorksStudents/> :  <HowItWorksCompany/>}
+          
           </Container>
           <Box mt={"11rem"} display={"flex"} justifyContent={"space-between"}>
             <Text opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"} ml={"11rem"} >Launching Soon</Text>
