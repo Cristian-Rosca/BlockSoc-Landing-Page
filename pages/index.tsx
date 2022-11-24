@@ -23,7 +23,7 @@ import JobPortalsIcon from '../components/FeaturesIcon/JobPortalsIcon'
 const Home: NextPage = () => {
 
   const [howItWorksDisplay, setHowItWorksDisplay] = useState<string>("Students")
-  const [featureInfoDisplay, setFeatureInfoDisplay] = useState<string>("Company")
+  const [featureInfoDisplay, setFeatureInfoDisplay] = useState<string>("Bounties")
 
   const getFeatureInfoSection = (sectionName : string) => {
     switch (sectionName){
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
         return <BountiesInfo/>
     }
   }
-  
+
   const getFeatureIconSection = (sectionName : string) => {
     switch (sectionName){
       case "Education":
