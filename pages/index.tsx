@@ -12,9 +12,9 @@ import HowItWorksCompany from '../components/HowItWorksCompany'
 import React, { useEffect, useState } from "react";
 
 const Home: NextPage = () => {
-  
-const [howItWorksDisplay, setHowItWorksDisplay] = useState<string>("Company")
-  
+
+  const [howItWorksDisplay, setHowItWorksDisplay] = useState<string>("Company")
+
   return (
     <>
       <Box display={"flex"} flexDirection={"row"} justifyContent={"center"}>
@@ -28,23 +28,24 @@ const [howItWorksDisplay, setHowItWorksDisplay] = useState<string>("Company")
               <Button textStyle='primary' mt={"3rem"} width={"auto"} p={"2rem"} bgColor={"purple.600"}>Join BlockSocDAO</Button>
             </Box>
           </Container>
-          <Box mt={"10rem"} display={"flex"} justifyContent={"space-between"}>
-            <Text opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>unching Soon</Text>
-            <Text opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>Launching Soon</Text>
-          </Box>
+
           <Container mt={"10rem"} maxW='container.lg'>
             <Heading as='h2' size='3xl' textAlign={"center"} > How it works</Heading>
-            <Box mt={10} display={"flex"} flexDirection={"row"} justifyContent={"center"}>
-              <Button mr={7} fontSize={"22"} textStyle='primary' variant={"link"} onClick={()=>setHowItWorksDisplay("Students")}>For Students</Button>
-              <Button textStyle='primary' fontSize={"22"} variant={"link"} onClick={()=>setHowItWorksDisplay("Company")}>For Companies</Button>
-            </Box>
-            {(howItWorksDisplay == "Students") ?  <HowItWorksStudents/> :  <HowItWorksCompany/>}
-          
+            {howItWorksDisplay === "Students" ?
+              <Box display={"flex"} justifyContent={"center"} mt={"1rem"}>
+                <Button mr={7} fontSize={"22"} textStyle='primary' color={"#D1FF6F"} variant={"link"} onClick={() => setHowItWorksDisplay("Students")}>For Students</Button>
+                <Button textStyle='primary' fontSize={"22"} variant={"link"} onClick={() => setHowItWorksDisplay("Company")}>For Companies</Button>
+              </Box>
+              :
+              <Box display={"flex"} justifyContent={"center"} mt={"1rem"}>
+                <Button mr={7} fontSize={"22"} textStyle='primary' variant={"link"} onClick={() => setHowItWorksDisplay("Students")}>For Students</Button>
+                <Button textStyle='primary' fontSize={"22"} variant={"link"} color={"#D1FF6F"} onClick={() => setHowItWorksDisplay("Company")}>For Companies</Button>
+              </Box>
+            }
+            {(howItWorksDisplay == "Students") ? <HowItWorksStudents /> : <HowItWorksCompany />}
+
           </Container>
-          <Box mt={"11rem"} display={"flex"} justifyContent={"space-between"}>
-            <Text opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"} ml={"11rem"} >Launching Soon</Text>
-            <Text opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>Launching</Text>
-          </Box>
+
           <Container mt={"11rem"} maxW='container.lg'>
             <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} alignItems={"center"}>
               <Heading as='h2' size='3xl' textAlign={"center"} >A student-first platform</Heading>
@@ -112,10 +113,7 @@ const [howItWorksDisplay, setHowItWorksDisplay] = useState<string>("Company")
               </Box>
             </Box>
           </Container>
-          <Box mt={"10rem"} display={"flex"} justifyContent={"space-between"}>
-            <Text opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>g Soon</Text>
-            <Text opacity={"0.2"} color={"#FFBF00"} fontSize={"100"} fontWeight={"600"}>Launching Soon</Text>
-          </Box>
+
           <Container mt={"10rem"} maxW='container.lg' >
             <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} alignItems={"center"}>
               <Heading as='h2' size='3xl' textAlign={"center"} >Types of NFTs</Heading>
