@@ -39,6 +39,7 @@ const Home: NextPage = () => {
         return <BountiesInfo/>
     }
   }
+  
   const getFeatureIconSection = (sectionName : string) => {
     switch (sectionName){
       case "Education":
@@ -95,10 +96,10 @@ const Home: NextPage = () => {
           <Container mt={"10rem"} maxW='100%'>
             <Box display={"flex"} flexDirection={"row"} justifyContent={"space-between"} alignItems={"center"}>
               <Box display={"flex"} flexDirection={"column"} flex={2} justifyContent={"flex-start"} alignItems={"flex-start"}>
-                <Button variant={"link"} textStyle='primary' fontSize={"19"} ml={"5rem"} mt={10} onClick={() => setFeatureInfoDisplay("Education")}>Education</Button>
-                <Button leftIcon={<HiOutlineCube></HiOutlineCube>} variant={"link"} textStyle='primary' fontSize={"22"} ml={"3rem"} mt={10} color={"#D1FF6F"} onClick={() => setFeatureInfoDisplay("Bounties")}>Bounties</Button>
-                <Button variant={"link"} ml={"5rem"} fontSize={"19"} textStyle='primary' mt={10} onClick={() => setFeatureInfoDisplay("Job Portals")}>Web 3.0 Job Portals</Button>
-                <Button variant={"link"} ml={"5rem"} fontSize={"19"} textStyle='primary' mt={10} onClick={() => setFeatureInfoDisplay("Community")}>Community</Button>
+                <Button leftIcon={featureInfoDisplay === "Education" ? <HiOutlineCube></HiOutlineCube> : <></>}variant={"link"} textStyle='primary' fontSize={featureInfoDisplay === "Education" ? "22" : "19" } ml={"5rem"} mt={10} color={featureInfoDisplay === "Education" ? "#D1FF6F" :"" } onClick={() => setFeatureInfoDisplay("Education")}>Education</Button>
+                <Button leftIcon={featureInfoDisplay === "Bounties" ? <HiOutlineCube></HiOutlineCube> : <></>} variant={"link"} textStyle='primary' fontSize={featureInfoDisplay === "Bounties" ? "22" : "19" } ml={"5rem"} mt={10} color={featureInfoDisplay === "Bounties" ? "#D1FF6F" :"" } onClick={() => setFeatureInfoDisplay("Bounties")}>Bounties</Button>
+                <Button leftIcon={featureInfoDisplay === "Job Portals" ? <HiOutlineCube></HiOutlineCube> : <></>}variant={"link"} ml={"5rem"} fontSize={featureInfoDisplay === "Job Portals" ? "22" : "19" } textStyle='primary' mt={10} color={featureInfoDisplay === "Job Portals" ? "#D1FF6F" :"" } onClick={() => setFeatureInfoDisplay("Job Portals")}>Web 3.0 Job Portals</Button>
+                <Button leftIcon={featureInfoDisplay === "Community" ? <HiOutlineCube></HiOutlineCube> : <></>}variant={"link"} ml={"5rem"} fontSize={featureInfoDisplay === "Community" ? "22" : "19" } textStyle='primary' mt={10} color={featureInfoDisplay === "Community" ? "#D1FF6F" :"" } onClick={() => setFeatureInfoDisplay("Community")}>Community</Button>
               </Box>
               {getFeatureInfoSection(featureInfoDisplay)}
               {getFeatureIconSection(featureInfoDisplay)}
