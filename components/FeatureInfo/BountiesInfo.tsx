@@ -4,7 +4,7 @@ import { HiOutlineCube } from "react-icons/hi";
 import discord_logo from "../../public/discord.svg"
 
 
-export const BountiesFeatures = () => {
+export const BountiesInfo = () => {
     return ( 
         <Container mt={"10rem"} maxW='100%'>
         <Box display={"flex"} flexDirection={"row"} justifyContent={"space-around"} alignItems={"center"}>
@@ -28,4 +28,4 @@ export const BountiesFeatures = () => {
      );
 }
  
-export default BountiesFeatures;
+export default BountiesInfo;
