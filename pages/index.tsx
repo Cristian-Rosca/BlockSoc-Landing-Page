@@ -11,11 +11,48 @@ import HowItWorksStudents from '../components/HowItWorksStudents'
 import HowItWorksCompany from '../components/HowItWorksCompany'
 import React, { useEffect, useState } from "react";
 import { HiOutlineCube } from "react-icons/hi";
+import EducationInfo from '../components/FeatureInfo/EducationInfo'
+import CommunityInfo from '../components/FeatureInfo/CommunityInfo'
+import BountiesInfo from '../components/FeatureInfo/BountiesInfo'
+import JobPortalsInfo from '../components/FeatureInfo/JobPortalsInfo'
+import EducationIcon from '../components/FeaturesIcon/EducationIcon'
+import BountiesIcon from '../components/FeaturesIcon/BountiesIcon'
+import CommunityIcon from '../components/FeaturesIcon/CommunityIcon'
+import JobPortalsIcon from '../components/FeaturesIcon/JobPortalsIcon'
 
 const Home: NextPage = () => {
 
   const [howItWorksDisplay, setHowItWorksDisplay] = useState<string>("Students")
   const [featureInfoDisplay, setFeatureInfoDisplay] = useState<string>("Company")
+
+  const getFeatureInfoSection = (sectionName : string) => {
+    switch (sectionName){
+      case "Education":
+        return <EducationInfo/>
+      case "Bounties":
+        return <BountiesInfo/>
+      case "Job Portals":
+        return <JobPortalsInfo/>
+      case "Community":
+        return <CommunityInfo/>
+      default:
+        return <BountiesInfo/>
+    }
+  }
+  const getFeatureIconSection = (sectionName : string) => {
+    switch (sectionName){
+      case "Education":
+        return <EducationIcon/>
+      case "Bounties":
+        return <BountiesIcon/>
+      case "Job Portals":
+        return <JobPortalsIcon/>
+      case "Community":
+        return <CommunityIcon/>
+      default:
+        return <BountiesIcon/>
+    }
+  }
 
   return (
     <>
@@ -56,13 +93,15 @@ const Home: NextPage = () => {
             </Box>
           </Container>
           <Container mt={"10rem"} maxW='100%'>
-            <Box display={"flex"} flexDirection={"row"} justifyContent={"space-around"} alignItems={"center"}>
+            <Box display={"flex"} flexDirection={"row"} justifyContent={"space-between"} alignItems={"center"}>
               <Box display={"flex"} flexDirection={"column"} flex={2} justifyContent={"flex-start"} alignItems={"flex-start"}>
                 <Button variant={"link"} textStyle='primary' fontSize={"19"} ml={"5rem"} mt={10} onClick={() => setFeatureInfoDisplay("Education")}>Education</Button>
                 <Button leftIcon={<HiOutlineCube></HiOutlineCube>} variant={"link"} textStyle='primary' fontSize={"22"} ml={"3rem"} mt={10} color={"#D1FF6F"} onClick={() => setFeatureInfoDisplay("Bounties")}>Bounties</Button>
                 <Button variant={"link"} ml={"5rem"} fontSize={"19"} textStyle='primary' mt={10} onClick={() => setFeatureInfoDisplay("Job Portals")}>Web 3.0 Job Portals</Button>
                 <Button variant={"link"} ml={"5rem"} fontSize={"19"} textStyle='primary' mt={10} onClick={() => setFeatureInfoDisplay("Community")}>Community</Button>
               </Box>
+              {getFeatureInfoSection(featureInfoDisplay)}
+              {getFeatureIconSection(featureInfoDisplay)}
             </Box>
           </Container>
           <Container mt={"10rem"} maxW='container.lg'>
