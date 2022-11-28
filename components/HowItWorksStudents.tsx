@@ -14,7 +14,7 @@ const HowItWorksStudents = () => {
             <Text pt={"2rem"} textStyle='secondary' fontSize={"20"}>Bounties</Text>
           </Box>
           <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
-          <Divider orientation='horizontal' width={"11rem"} />
+          <Divider variant={"customLink"} orientation='horizontal' width={"11rem"} />
           </Box>
           </Box>
 
@@ -24,7 +24,7 @@ const HowItWorksStudents = () => {
             <Text textStyle='secondary' fontSize={"20"} pt={"2rem"} >Education</Text>
           </Box>
           <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
-          <Divider orientation='horizontal' width={"11rem"} />
+          <Divider variant={"customLink"} orientation='horizontal' width={"11rem"} />
           </Box>
           </Box>
         </Box>
@@ -41,7 +41,7 @@ const HowItWorksStudents = () => {
         <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
         <Box display={"flex"}>
           <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} >
-          <Divider orientation='horizontal' width={"11rem"} />
+          <Divider variant={"customLink"} orientation='horizontal' width={"11rem"} />
           </Box>
           <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"2rem"} width={"11rem"}>
             <Image src={discord_logo} width={"100px"} height={"100px"} />
