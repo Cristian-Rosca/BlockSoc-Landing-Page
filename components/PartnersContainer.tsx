@@ -8,18 +8,24 @@ import discord_logo from "../public/discord.svg"
 
 
 const PartnersContainer = () => {
-    return ( 
-        <Container mt={"10rem"} maxW='container.lg'>
-            <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} >
-              <Heading as='h3' size='xl' textAlign={"center"} alignSelf={"center"} width={"80%"} mb={"4rem"}>Trusted by partners from across the globe</Heading>
-              <Box display={"flex"} flexDirection={"row"} justifyContent={"space-between"}>
-                <Image src={daolens_logo} width={"177px"} height={"48px"} />
-                <Image src={moralis_logo} width={"177px"} height={"48px"} />
-                <Image src={cityDAO_logo} width={"177px"} height={"48px"} />
-              </Box>
-            </Box>
-          </Container>
-     );
+  return (
+    <Container mt={"10rem"} maxW='container.lg'>
+      <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} >
+        <Heading as='h3' size='xl' textAlign={"center"} alignSelf={"center"} width={"80%"} mb={"4rem"}>Trusted by partners from across the globe</Heading>
+        <Box display={"flex"} flexDirection={{base: "column", sm: "column", md: "row", lg: "row", xl: "row"}} justifyContent={"space-between"} gap={"2rem"} alignItems={{base: "center", sm: "center", md: "", lg: "", xl: ""}} px={"3rem"}>
+          <Box width={{base: "50%", sm: "50%", md: "25%", lg: "25%", xl: "25%"}}>
+            <Image src={daolens_logo} objectFit={"contain"} />
+          </Box>
+          <Box width={{base: "50%", sm: "50%", md: "25%", lg: "25%", xl: "25%"}}>
+            <Image src={moralis_logo} objectFit={"contain"} />
+          </Box>
+          <Box width={{base: "50%", sm: "50%", md: "25%", lg: "25%", xl: "25%"}}>
+            <Image src={cityDAO_logo} objectFit={"contain"} />
+          </Box>
+        </Box>
+      </Box>
+    </Container>
+  );
 }
- 
+
 export default PartnersContainer;
