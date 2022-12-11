@@ -6,7 +6,7 @@ type StudentInfoContext = {
 }
 
 const iStudentInfoState = {
-    studentFeatureInfoDisplay: "Education",
+    studentFeatureInfoDisplay: "Student_Education",
     setStudentFeatureInfoDisplay: () => { }
 }
 

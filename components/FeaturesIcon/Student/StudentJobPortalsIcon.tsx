@@ -1,9 +1,10 @@
 import { Box} from "@chakra-ui/react";
 import Image from "next/image";
-import discord_logo from "../../public/discord.svg"
+import discord_logo from "../../../public/discord.svg"
 
 
-export const JobPortalsIcon = () => {
+
+export const StudentJobPortalsIcon = () => {
     return ( 
           <Box display={"flex"} flexDirection={"column"} flex={4}>
             <Image src={discord_logo} width={"300px"} height={"300px"} />
@@ -11,4 +12,4 @@ export const JobPortalsIcon = () => {
      );
 }
  
-export default JobPortalsIcon;
+export default StudentJobPortalsIcon;

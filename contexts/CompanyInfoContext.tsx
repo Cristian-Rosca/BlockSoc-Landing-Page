@@ -6,7 +6,7 @@ type CompanyInfoContext = {
 }
 
 const iCompanyInfoState = {
-    companyFeatureInfoDisplay: "Education",
+    companyFeatureInfoDisplay: "Company_Education",
     setCompanyFeatureInfoDisplay: () => { }
 }
 
