@@ -1,12 +1,12 @@
 import { Box, Button } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { getFeatureIconSection, getFeatureInfoSection } from "../../service/utils";
 import { HiOutlineCube } from "react-icons/hi";
+import { CompanyInfoContext } from "../../contexts/CompanyInfoContext";
 
 const CompanyFeaturesDetails = () => {
   
-  const [companyFeatureInfoDisplay, setCompanyFeatureInfoDisplay] = useState<string>("Bounties")
-
+  const {companyFeatureInfoDisplay, setCompanyFeatureInfoDisplay} = useContext(CompanyInfoContext)
   
   return ( 
 
