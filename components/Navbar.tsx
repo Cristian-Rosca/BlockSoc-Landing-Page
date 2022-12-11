@@ -17,8 +17,8 @@ const Navbar = () => {
                     </Link>
                 </Box>
                 <Box display={"flex"} mr={"2rem"}>
-                    <Button textStyle='primary' width={"auto"} p={"2rem"} bgColor={"purple.600"} mr={"2rem"}>Launch dApp</Button>
-                    <Button textStyle='primary' width={"auto"} p={"2rem"} bgColor={"purple.600"}>Join Discord</Button>
+                    <Button textStyle='primary' width={"auto"} p={"1.5rem"} bgColor={"purple.600"} mr={"2rem"}>Launch dApp</Button>
+                    {/* <Button textStyle='primary' width={"auto"} p={"2rem"} bgColor={"purple.600"}>Join Discord</Button> */}
                 </Box>
 
             </Box>

@@ -2,7 +2,7 @@ import { Box, Divider, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import discord_logo from "../public/discord.svg"
 
-const HowItWorksStudents = () => {
+const CompanyFeatures = () => {
     return (
         
         <Box display={"flex"} justifyContent={"space-apart"} mt={"5rem"}>
@@ -11,7 +11,7 @@ const HowItWorksStudents = () => {
           <Box display={"flex"}>
           <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"2rem"} width={"11rem"}>
             <Image src={discord_logo} width={"100px"} height={"100px"} />
-            <Text pt={"2rem"} textStyle='secondary' fontSize={"20"}>Bounties</Text>
+            <Text pt={"2rem"} textStyle='secondary' fontSize={"20"} textAlign={"center"}>Outsource Bounties</Text>
           </Box>
           <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
           <Divider variant={"customLink"} orientation='horizontal' width={"11rem"} />
@@ -21,7 +21,7 @@ const HowItWorksStudents = () => {
           <Box display={"flex"}>
           <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"2rem"} width={"11rem"}>
             <Image src={discord_logo} width={"100px"} height={"100px"} />
-            <Text textStyle='secondary' fontSize={"20"} pt={"2rem"} >Education</Text>
+            <Text textStyle='secondary' fontSize={"20"} pt={"2rem"} textAlign={"center"}>Increase Exposure</Text>
           </Box>
           <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
           <Divider variant={"customLink"} orientation='horizontal' width={"11rem"} />
@@ -34,7 +34,7 @@ const HowItWorksStudents = () => {
           <Image src={discord_logo} width={"200px"} height={"200px"} />
           </Box>
           <Box display={"flex"} justifyContent={"center"} alignItems={"center"} mt={"6rem"} width={"80%"}>
-          <Text textAlign={"center"} textStyle='secondary' fontSize={"20"}>Verifiable On-Chain Resumes</Text>
+          <Text textAlign={"center"} textStyle='secondary' fontSize={"20"}>Find Web3 Native Talent</Text>
           </Box>
         </Box>
         {/* Right Side Section */}
@@ -45,7 +45,7 @@ const HowItWorksStudents = () => {
           </Box>
           <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"2rem"} width={"11rem"}>
             <Image src={discord_logo} width={"100px"} height={"100px"} />
-            <Text pt={"2rem"} textStyle='secondary' fontSize={"20"}>Web3 Jobs</Text>
+            <Text pt={"2rem"} textStyle='secondary' fontSize={"20"} textAlign={"center"}>Discover Start-ups</Text>
           </Box>
           </Box>
         </Box>
@@ -54,4 +54,4 @@ const HowItWorksStudents = () => {
       );
 }
  
-export default HowItWorksStudents;
+export default CompanyFeatures;
