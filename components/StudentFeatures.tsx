@@ -1,7 +1,6 @@
 import { Box, Divider, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import discord_logo from "../public/discord.svg"
-import { TiArrowDownThick } from "react-icons/ti";
 
 
 export const StudentFeatures = () => {

@@ -50,7 +50,6 @@ export const getFeatureInfoSection = (sectionName: string) => {
           return <StudentResumeIcon />
       case "Student_Job_Portals":
         return <StudentJobPortalsIcon />
-        // TODO
       case "Company_Education":
         return <CompanyEducationIcon />
       case "Company_Bounties":
