@@ -13,7 +13,7 @@ const HowItWorksContainer = () => {
   const { howItWorksDisplay, setHowItWorksDisplay } = useContext(ActiveDisplayContext)
 
   const [studentFeatureInfoDisplay, setStudentFeatureInfoDisplay] = useState<string>("Student_Education")
-  const [companyFeatureInfoDisplay, setCompanyFeatureInfoDisplay] = useState<string>("Company_Education")
+  const [companyFeatureInfoDisplay, setCompanyFeatureInfoDisplay] = useState<string>("Company_Bounties")
 
 
 
