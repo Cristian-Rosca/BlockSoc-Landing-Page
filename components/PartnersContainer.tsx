@@ -3,9 +3,6 @@ import Image from 'next/image'
 import daolens_logo from "../public/daolens.png"
 import moralis_logo from "../public/moralis.png"
 import cityDAO_logo from "../public/citydao.png"
-import discord_logo from "../public/discord.svg"
-
-
 
 const PartnersContainer = () => {
   return (
