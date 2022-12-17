@@ -19,16 +19,16 @@ const HowItWorksContainer = () => {
 
   return (
     <Container mt={"10rem"} maxW='100%'>
-      <Heading as='h2' size='3xl' textAlign={"center"} >How it works</Heading>
+      <Heading as='h2' size={{base: "2xl", sm: '3xl'}} textAlign={"center"} >How it works</Heading>
       {howItWorksDisplay === "Students" ?
-        <Box display={"flex"} justifyContent={"center"} mt={"1rem"}>
-          <Button mr={7} fontSize={"22"} textStyle='primary' color={"#D1FF6F"} variant={"link"} onClick={() => setHowItWorksDisplay("Students")}>For Students</Button>
-          <Button textStyle='primary' fontSize={"22"} variant={"link"} onClick={() => setHowItWorksDisplay("Company")}>For Companies</Button>
+        <Box display={"flex"} flexDirection={{base: "column", sm: 'row'}} justifyContent={"center"} mt={"1rem"} gap={"1.2rem"}>
+          <Button  fontSize={"1.3rem"} textStyle='primary' color={"#D1FF6F"} variant={"link"} onClick={() => setHowItWorksDisplay("Students")}>For Students</Button>
+          <Button textStyle='primary' fontSize={"1.3rem"} variant={"link"} onClick={() => setHowItWorksDisplay("Company")}>For Companies</Button>
         </Box>
         :
-        <Box display={"flex"} justifyContent={"center"} mt={"1rem"}>
-          <Button mr={7} fontSize={"22"} textStyle='primary' variant={"link"} onClick={() => setHowItWorksDisplay("Students")}>For Students</Button>
-          <Button textStyle='primary' fontSize={"22"} variant={"link"} color={"#D1FF6F"} onClick={() => setHowItWorksDisplay("Company")}>For Companies</Button>
+        <Box display={"flex"} flexDirection={{base: "column", sm: 'row'}} justifyContent={"center"} mt={"1rem"} gap={"1.2rem"}>
+          <Button  fontSize={"1.3rem"} textStyle='primary' variant={"link"} onClick={() => setHowItWorksDisplay("Students")}>For Students</Button>
+          <Button textStyle='primary' fontSize={"1.3rem"} variant={"link"} color={"#D1FF6F"} onClick={() => setHowItWorksDisplay("Company")}>For Companies</Button>
         </Box>
       }
       <StudentInfoContext.Provider value={{ studentFeatureInfoDisplay, setStudentFeatureInfoDisplay }}>

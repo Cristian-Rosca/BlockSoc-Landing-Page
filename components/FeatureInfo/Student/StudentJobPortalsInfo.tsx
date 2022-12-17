@@ -5,7 +5,7 @@ import discord_logo from "../../public/discord.svg"
 
 export const StudentJobPortals = () => {
     return ( 
-          <Box display={"flex"} flexDirection={"column"} flex={3}>
+          <Box display={"flex"} flexDirection={"column"}>
             <Heading as='h3' size='xl'>Web3 Jobs</Heading >
             <Text textStyle='primary' fontSize={"19"} mt={"1rem"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               {<br />} {<br />}
