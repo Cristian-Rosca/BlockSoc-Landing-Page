@@ -17,17 +17,17 @@ const NFTTypesContainer = () => {
         </Text>
       </Box>
       <Box  display={"flex"} flexDirection={isGreaterThan650px ? "row" : "column"} justifyContent={isGreaterThan650px ? "space-evenly" : ""} gap={"4rem"} width={isGreaterThan650px ? "70%" : ""} textAlign={"center"}>
-        <Box mt={isGreaterThan650px ? "5rem" : "3rem"} display={"flex"} flexDirection={"column"} alignItems={"center"} bg={"rgba(52, 52, 52, 0.2)"} width={isGreaterThan650px ? "40%" : ""} p={isGreaterThan650px ? "3%" : "10%"} rounded={10}>
+        <Box mt={isGreaterThan650px ? "5rem" : "3rem"} display={"flex"} flexDirection={"column"} alignItems={"center"} bg={"rgba(52, 52, 52, 0.2)"} width={isGreaterThan650px ? "40%" : ""} px={isGreaterThan650px ? "2.5%" : "10%"}  rounded={10}>
           <Box px={"10%"}>
             <Image src={education_icon} objectFit={"contain"} />
           </Box>
-          <Heading mt={"2rem"} as='h4' size='l'>Dynamic NFT for students</Heading>
+          <Heading my={"2rem"}  as='h4' fontSize={"1.1rem"}>Dynamic NFT for students</Heading>
         </Box>
-        <Box mt={isGreaterThan650px ? "5rem": ""} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} bg={"rgba(52, 52, 52, 0.2)"} width={isGreaterThan650px ? "40%" : "%"} p={isGreaterThan650px ? "3%" : "10%"} rounded={10}>
+        <Box mt={isGreaterThan650px ? "5rem": ""} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} bg={"rgba(52, 52, 52, 0.2)"} width={isGreaterThan650px ? "40%" : "%"} px={isGreaterThan650px ? "2.5%" : "10%"} rounded={10}>
           <Box px={"10%"}>
             <Image src={education_icon} objectFit={"contain"} />
           </Box>
-          <Heading mt={"2rem"} as='h4' size='l' >Resource NFT for companies</Heading>
+          <Heading my={"2rem"} as='h4' fontSize={"1.1rem"} >Resource NFT for companies</Heading>
         </Box>
       </Box>
     </Box>
