@@ -7,6 +7,8 @@ import "@fontsource/montserrat/800.css";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { defineStyleConfig } from '@chakra-ui/react'
+import '../style.css'
+
 
 const customLink = defineStyle({
   borderWidth: '20px', // change the width of the border
@@ -30,9 +32,9 @@ const theme = extendTheme({
       },
     })
   },
-  fonts: {
-    heading: `Sharp Grotesk`,
-  },
+  // fonts: {
+  //   heading: `Sharp Grotesk`,
+  // },
 
   textStyles: {
     primary: {
@@ -45,6 +47,10 @@ const theme = extendTheme({
     },
   },
 
+  fonts : {
+    heading: `Sharp Grotesk`
+  },
+
   components: {
      Divider: dividerTheme 
   }
@@ -53,8 +59,7 @@ const theme = extendTheme({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <Fonts />
-
+      {/* <Fonts /> */}
       <Box bgImage="../background.png" bgPosition="start" bgRepeat="repeat">
       <Navbar />
         <Component  {...pageProps} />
