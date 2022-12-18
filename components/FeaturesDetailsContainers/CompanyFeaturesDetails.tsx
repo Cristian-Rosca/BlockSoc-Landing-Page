@@ -58,19 +58,19 @@ const CompanyFeaturesDetails = () => {
               isLessThan650px ?
                 <Box display={"flex"} flexDirection={"column"} justifyContent={"flex start"} textAlign={"center"} alignItems={"center"} px={"8%"}>
                   {/*  make this a map -> turn each of these into enums */}
-                    <Box mt={"3rem"} display={"flex"}>
+                    <Box mt={"3rem"} display={"flex"} bg={"rgba(52, 52, 52, 0.2)"} rounded={10} py={"10%"} px={"5%"}>
                       {getFeatureInfoSection("Company_Bounties")}
                     </Box>
                  
-                    <Box mt={"3rem"} display={"flex"}>
+                    <Box mt={"3rem"} display={"flex"} bg={"rgba(52, 52, 52, 0.2)"} rounded={10} py={"10%"} px={"5%"}>
                       {getFeatureInfoSection("Company_Exposure")}
                     </Box>
               
-                    <Box mt={"3rem"} display={"flex"}>
+                    <Box mt={"3rem"} display={"flex"} bg={"rgba(52, 52, 52, 0.2)"} rounded={10} py={"10%"} px={"5%"}>
                       {getFeatureInfoSection("Company_Talent")}
                     </Box>
                   
-                    <Box mt={"3rem"} display={"flex"}>
+                    <Box mt={"3rem"} display={"flex"} bg={"rgba(52, 52, 52, 0.2)"} rounded={10} py={"10%"} px={"5%"}>
                       {getFeatureInfoSection("Company_Start-ups")}
                     </Box>
       

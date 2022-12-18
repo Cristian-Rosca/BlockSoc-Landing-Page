@@ -29,20 +29,25 @@ const Home: NextPage = () => {
 
         <ActiveDisplayContext.Provider value={{ howItWorksDisplay, setHowItWorksDisplay }}>
 
+          
+
+          {isGreaterThan650px ? ""  : <StudentFirstBanner />}
 
           {isGreaterThan650px ? <WhatWeOfferContainer /> : <HowItWorksContainer />}
 
-          <StudentFirstBanner />
+          {isGreaterThan650px ? <StudentFirstBanner />  : ""}
+
 
           {isGreaterThan650px ? <HowItWorksContainer /> : ""}
+
+        <PartnersContainer />
 
         </ActiveDisplayContext.Provider>
 
 
 
-        <PartnersContainer />
-        <CallToActionContainer />
-        <NFTTypesContainer />
+        {/* <CallToActionContainer /> */}
+        {/* <NFTTypesContainer /> */}
 
       </Box>
 
