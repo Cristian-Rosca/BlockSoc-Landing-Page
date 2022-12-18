@@ -1,4 +1,4 @@
-import { Box, Button, Container, Heading } from "@chakra-ui/react";
+import { Box, Button, Container, Heading, useMediaQuery } from "@chakra-ui/react";
 import { useContext, useState } from "react";
 import { ActiveDisplayContext } from "../contexts/ActiveDisplayContext";
 import { CompanyInfoContext } from "../contexts/CompanyInfoContext";
@@ -15,11 +15,13 @@ const HowItWorksContainer = () => {
   const [studentFeatureInfoDisplay, setStudentFeatureInfoDisplay] = useState<string>("Student_Education")
   const [companyFeatureInfoDisplay, setCompanyFeatureInfoDisplay] = useState<string>("Company_Bounties")
 
-
+  const [isGreaterThan650px] = useMediaQuery([
+    '(min-width: 650px)',
+  ]);
 
   return (
-    <Container mt={"10rem"} maxW='100%'>
-      <Heading as='h2' size={{base: "2xl", sm: '3xl'}} textAlign={"center"} >How it works</Heading>
+    <Container mt={isGreaterThan650px ? "10rem" : "7rem"} maxW='100%'>
+      <Heading as='h2' size={{base: "2xl", sm: '3xl'}} textAlign={"center"}>How it works</Heading>
       {howItWorksDisplay === "Students" ?
         <Box display={"flex"} flexDirection={{base: "column", sm: 'row'}} justifyContent={"center"} mt={"1rem"} gap={"1.2rem"}>
           <Button  fontSize={"1.3rem"} textStyle='primary' color={"#D1FF6F"} variant={"link"} onClick={() => setHowItWorksDisplay("Students")}>For Students</Button>

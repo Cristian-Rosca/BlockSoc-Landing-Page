@@ -1,56 +1,126 @@
-import { Box, Divider, Text } from "@chakra-ui/react";
+import { Box, Divider, Text, useMediaQuery, Flex } from "@chakra-ui/react";
 import Image from "next/image";
-import discord_logo from "../public/discord.svg"
+import education_icon from "../public/educationIcon.png"
 
 const CompanyFeatures = () => {
-    return (
-        
-        <Box display={"flex"} justifyContent={"space-apart"} mt={"5rem"}>
-        {/* Left Side Section */}
-        <Box display={"flex"} flexDirection={"column"} justifyContent={"space-evenly"} >
-          <Box display={"flex"}>
-          <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"2rem"} width={"11rem"}>
-            <Image src={discord_logo} width={"100px"} height={"100px"} />
-            <Text pt={"2rem"} textStyle='secondary' fontSize={"20"} textAlign={"center"}>Outsource Bounties</Text>
-          </Box>
-          <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
-          <Divider variant={"customLink"} orientation='horizontal' width={"11rem"} />
-          </Box>
-          </Box>
-
-          <Box display={"flex"}>
-          <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"2rem"} width={"11rem"}>
-            <Image src={discord_logo} width={"100px"} height={"100px"} />
-            <Text textStyle='secondary' fontSize={"20"} pt={"2rem"} textAlign={"center"}>Increase Exposure</Text>
-          </Box>
-          <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
-          <Divider variant={"customLink"} orientation='horizontal' width={"11rem"} />
-          </Box>
-          </Box>
-        </Box>
-        {/* Middle Section */}
-        <Box display={"flex"} flexDirection={"column"} bg={"rgba(52, 52, 52, 0.2)"} height={"40rem"} width={"30rem"} alignItems={"center"} justifyContent={"center"}>
-          <Box display={"flex"} justifyContent={"center"} alignItems={"center"} >
-          <Image src={discord_logo} width={"200px"} height={"200px"} />
-          </Box>
-          <Box display={"flex"} justifyContent={"center"} alignItems={"center"} mt={"6rem"} width={"80%"}>
-          <Text textAlign={"center"} textStyle='secondary' fontSize={"20"}>Find Web3 Native Talent</Text>
-          </Box>
-        </Box>
-        {/* Right Side Section */}
-        <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
+  
+  const [isLessThan650px, isGreaterThan650px, isLessThan1080px, isGreaterThan1080px] = useMediaQuery([
+    '(max-width: 650px)',
+    '(min-width: 650px)',
+    '(max-width: 1080px)',
+    '(min-width: 1080px)'
+  ]);
+  
+  return (       
+    <>
+    {isGreaterThan1080px ? <Box display={"flex"} justifyContent={"center"} mt={"5rem"}>
+      {/* Left Side Section */}
+      <Box display={"flex"} flexDirection={"column"} justifyContent={"space-evenly"} width={"30%"} gap={"4rem"}>
         <Box display={"flex"}>
-          <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} >
-          <Divider variant={"customLink"} orientation='horizontal' width={"11rem"} />
+          <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"10%"} rounded={10} width={"55%"}>
+            <Box>
+              <Image src={education_icon} objectFit={"contain"} />
+            </Box>
+            <Text pt={"2rem"} textStyle='secondary' fontSize={"1.3rem"} textAlign={"center"}>Outsource Bounties</Text>
           </Box>
-          <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"2rem"} width={"11rem"}>
-            <Image src={discord_logo} width={"100px"} height={"100px"} />
-            <Text pt={"2rem"} textStyle='secondary' fontSize={"20"} textAlign={"center"}>Discover Start-ups</Text>
-          </Box>
+          <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} width={"45%"}>
+            <Divider variant={"customLink"} orientation='horizontal' />
           </Box>
         </Box>
+
+        <Box display={"flex"}>
+          <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"10%"} rounded={10} width={"55%"}>
+            <Box>
+              <Image src={education_icon} objectFit={"contain"} />
+            </Box>
+            <Text textStyle='secondary' fontSize={"1.3rem"} pt={"2rem"} textAlign={"center"}>Increase Exposure</Text>
+          </Box>
+          <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} width={"45%"}>
+            <Divider variant={"customLink"} orientation='horizontal' />
+          </Box>
+        </Box>
+      </Box>
+
+      {/* Middle Section */}
+      <Box display={"flex"} flexDirection={"column"} bg={"rgba(52, 52, 52, 0.2)"} width={"30%"} alignItems={"center"} justifyContent={"center"} px={"5%"} rounded={10} >
+        <Box >
+          <Image src={education_icon} objectFit={"contain"} />
+        </Box>
+        <Text textAlign={"center"} textStyle='secondary' fontSize={"1.3rem"} mt={"5rem"} >Find Web3 Native Talent</Text>
+
 
       </Box>
+      {/* Right Side Section */}
+      <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} width={"30%"}>
+        <Box display={"flex"}>
+          <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} width={"45%"} >
+            <Divider variant={"customLink"} orientation='horizontal' />
+          </Box>
+          <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"10%"} rounded={10} width={"55%"}>
+            <Box>
+              <Image src={education_icon} objectFit={"contain"} />
+            </Box>
+            <Text pt={"2rem"} textStyle='secondary' fontSize={"1.3rem"} textAlign={"center"}>Discover Start-ups</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+      : ""}
+    {
+      isGreaterThan650px && isLessThan1080px ?
+        <Flex flexDirection={"column"} px={"10%"} mt={"3rem"}>
+          <Box display={"flex"} flexDirection={"column"} bg={"rgba(52, 52, 52, 0.2)"} alignItems={"center"} justifyContent={"center"} pt={"3rem"} px={"10%"} rounded={10} >
+            <Box width={"50%"}>
+              <Image src={education_icon} objectFit={"contain"} />
+            </Box>
+            <Text textAlign={"center"} textStyle='secondary' fontSize={"1.3rem"} py={"3rem"} >Find Web3 Native Talent</Text>
+          </Box>
+
+          <Flex justifyContent={"space-between"}>
+            <Flex flexDirection={"column"} width={"30%"} alignItems={"center"} >
+              <Box display={"flex"} height={"10vh"}>
+                <Divider variant={"customLink"} orientation='vertical' />
+              </Box>
+              <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"10%"} rounded={10} >
+                <Box>
+                  <Image src={education_icon} objectFit={"contain"} />
+                </Box>
+                <Text pt={"2rem"} textStyle='secondary' fontSize={"1.3rem"} textAlign={"center"}>Outsource Bounties</Text>
+              </Box>
+
+            </Flex>
+
+            <Flex flexDirection={"column"} width={"30%"} alignItems={"center"}>
+              <Box display={"flex"} height={"10vh"}>
+                <Divider variant={"customLink"} orientation='vertical' />
+              </Box>
+              <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"10%"} rounded={10} >
+                <Box>
+                  <Image src={education_icon} objectFit={"contain"} />
+                </Box>
+                <Text pt={"2rem"} textStyle='secondary' fontSize={"1.3rem"} textAlign={"center"}>Increase Exposure</Text>
+              </Box>
+
+            </Flex>
+            <Flex flexDirection={"column"} width={"30%"} alignItems={"center"}>
+              <Box display={"flex"} height={"10vh"}>
+                <Divider variant={"customLink"} orientation='vertical' />
+              </Box>
+              <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"10%"} rounded={10} >
+                <Box>
+                  <Image src={education_icon} objectFit={"contain"} />
+                </Box>
+                <Text pt={"2rem"} textStyle='secondary' fontSize={"1.3rem"} textAlign={"center"}>Discover Start-ups</Text>
+              </Box>
+
+            </Flex>
+          </Flex>
+
+        </Flex>
+
+        : ""}
+
+  </>
       );
 }
  

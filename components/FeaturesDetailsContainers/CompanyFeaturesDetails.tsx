@@ -16,17 +16,6 @@ const CompanyFeaturesDetails = () => {
   ]);
   
   return ( 
-
-        // <Box display={"flex"} flexDirection={"row"} justifyContent={"space-between"} alignItems={"center"} mt={"5rem"}>
-        //       <Box display={"flex"} flexDirection={"column"} flex={2} justifyContent={"flex-start"} alignItems={"flex-start"}>
-        //         <Button leftIcon={companyFeatureInfoDisplay === "Company_Bounties" ? <HiOutlineCube></HiOutlineCube> : <></>} variant={"link"} textStyle='primary' fontSize={companyFeatureInfoDisplay === "Company_Bounties" ? "22" : "19"} ml={"5rem"} mt={10} color={companyFeatureInfoDisplay === "Company_Bounties" ? "#D1FF6F" : ""} onClick={() => setCompanyFeatureInfoDisplay("Company_Bounties")}>Bounties</Button>
-        //         <Button leftIcon={companyFeatureInfoDisplay === "Company_Exposure" ? <HiOutlineCube></HiOutlineCube> : <></>} variant={"link"} textStyle='primary' fontSize={companyFeatureInfoDisplay === "Company_Exposure" ? "22" : "19"} ml={"5rem"} mt={10} color={companyFeatureInfoDisplay === "Company_Exposure" ? "#D1FF6F" : ""} onClick={() => setCompanyFeatureInfoDisplay("Company_Exposure")}>Exposure</Button>
-        //         <Button leftIcon={companyFeatureInfoDisplay === "Company_Talent" ? <HiOutlineCube></HiOutlineCube> : <></>} variant={"link"} ml={"5rem"} fontSize={companyFeatureInfoDisplay === "Company_Talent" ? "22" : "19"} textStyle='primary' mt={10} color={companyFeatureInfoDisplay === "Company_Talent" ? "#D1FF6F" : ""} onClick={() => setCompanyFeatureInfoDisplay("Company_Talent")}>Web3 Talent</Button>
-        //         <Button leftIcon={companyFeatureInfoDisplay === "Company_Start-ups" ? <HiOutlineCube></HiOutlineCube> : <></>} variant={"link"} ml={"5rem"} fontSize={companyFeatureInfoDisplay === "Company_Start-ups" ? "22" : "19"} textStyle='primary' mt={10} color={companyFeatureInfoDisplay === "Company_Start-ups" ? "#D1FF6F" : ""} onClick={() => setCompanyFeatureInfoDisplay("Company_Start-ups")}>Start-ups</Button>
-        //       </Box>
-        //       {getFeatureInfoSection(companyFeatureInfoDisplay)}
-        //       {getFeatureIconSection(companyFeatureInfoDisplay)}
-        //     </Box>
             <>
             {isGreaterThan1080px ?
               <Box display={"flex"} flexDirection={"row"} justifyContent={"space-between"} alignItems={"center"} mt={"5rem"} px={"5%"}>
@@ -48,10 +37,10 @@ const CompanyFeaturesDetails = () => {
               isGreaterThan650px && isLessThan1080px ?
                 <Box display={"flex"} flexDirection={"column"} justifyContent={"flex start"} alignItems={"center"} mt={"4rem"}>
                   <Box display={"flex"} flexDirection={"row"} gap={3}>
-                  <Button leftIcon={companyFeatureInfoDisplay === "Company_Bounties" ? <HiOutlineCube></HiOutlineCube> : <></>} variant={"link"} textStyle='primary' fontSize={companyFeatureInfoDisplay === "Company_Bounties" ? "1.3rem" : "1.2rem"} mt={10} color={companyFeatureInfoDisplay === "Company_Bounties" ? "#D1FF6F" : ""} onClick={() => setCompanyFeatureInfoDisplay("Company_Bounties")}>Bounties</Button>
-                <Button leftIcon={companyFeatureInfoDisplay === "Company_Exposure" ? <HiOutlineCube></HiOutlineCube> : <></>} variant={"link"} textStyle='primary' fontSize={companyFeatureInfoDisplay === "Company_Exposure" ? "1.3rem" : "1.2rem"} mt={10} color={companyFeatureInfoDisplay === "Company_Exposure" ? "#D1FF6F" : ""} onClick={() => setCompanyFeatureInfoDisplay("Company_Exposure")}>Exposure</Button>
-                <Button leftIcon={companyFeatureInfoDisplay === "Company_Talent" ? <HiOutlineCube></HiOutlineCube> : <></>} variant={"link"} fontSize={companyFeatureInfoDisplay === "Company_Talent" ? "1.3rem" : "1.2rem"} textStyle='primary' mt={10} color={companyFeatureInfoDisplay === "Company_Talent" ? "#D1FF6F" : ""} onClick={() => setCompanyFeatureInfoDisplay("Company_Talent")}>Web3 Talent</Button>
-                <Button leftIcon={companyFeatureInfoDisplay === "Company_Start-ups" ? <HiOutlineCube></HiOutlineCube> : <></>} variant={"link"} fontSize={companyFeatureInfoDisplay === "Company_Start-ups" ? "1.3rem" : "1.2rem"} textStyle='primary' mt={10} color={companyFeatureInfoDisplay === "Company_Start-ups" ? "#D1FF6F" : ""} onClick={() => setCompanyFeatureInfoDisplay("Company_Start-ups")}>Start-ups</Button>
+                  <Button leftIcon={companyFeatureInfoDisplay === "Company_Bounties" ? <HiOutlineCube></HiOutlineCube> : <></>} variant={"link"} textStyle='primary' fontSize={companyFeatureInfoDisplay === "Company_Bounties" ? "1.3rem" : "1.2rem"}  color={companyFeatureInfoDisplay === "Company_Bounties" ? "#D1FF6F" : ""} onClick={() => setCompanyFeatureInfoDisplay("Company_Bounties")}>Bounties</Button>
+                <Button leftIcon={companyFeatureInfoDisplay === "Company_Exposure" ? <HiOutlineCube></HiOutlineCube> : <></>} variant={"link"} textStyle='primary' fontSize={companyFeatureInfoDisplay === "Company_Exposure" ? "1.3rem" : "1.2rem"}  color={companyFeatureInfoDisplay === "Company_Exposure" ? "#D1FF6F" : ""} onClick={() => setCompanyFeatureInfoDisplay("Company_Exposure")}>Exposure</Button>
+                <Button leftIcon={companyFeatureInfoDisplay === "Company_Talent" ? <HiOutlineCube></HiOutlineCube> : <></>} variant={"link"} fontSize={companyFeatureInfoDisplay === "Company_Talent" ? "1.3rem" : "1.2rem"} textStyle='primary'  color={companyFeatureInfoDisplay === "Company_Talent" ? "#D1FF6F" : ""} onClick={() => setCompanyFeatureInfoDisplay("Company_Talent")}>Web3 Talent</Button>
+                <Button leftIcon={companyFeatureInfoDisplay === "Company_Start-ups" ? <HiOutlineCube></HiOutlineCube> : <></>} variant={"link"} fontSize={companyFeatureInfoDisplay === "Company_Start-ups" ? "1.3rem" : "1.2rem"} textStyle='primary'  color={companyFeatureInfoDisplay === "Company_Start-ups" ? "#D1FF6F" : ""} onClick={() => setCompanyFeatureInfoDisplay("Company_Start-ups")}>Start-ups</Button>
                   </Box>
                   <Box display={"flex"} flexDirection={"row"} justifyContent={"space-around"} alignItems={"center"}  mt={"3rem"} px={"5%"}>
                   <Box display={"flex"} width={"60%"}>

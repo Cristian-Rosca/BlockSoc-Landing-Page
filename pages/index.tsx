@@ -1,4 +1,4 @@
-import { Box, Button, Container, Divider, Heading, Text } from '@chakra-ui/react'
+import { Box, Button, Container, Divider, Heading, Text, useMediaQuery } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import React, { useState } from "react";
@@ -16,6 +16,10 @@ const Home: NextPage = () => {
 
   const [howItWorksDisplay, setHowItWorksDisplay] = useState<string>("Students")
 
+  const [isGreaterThan650px] = useMediaQuery([
+    '(min-width: 650px)',
+  ]);
+
   return (
     <>
 
@@ -26,11 +30,12 @@ const Home: NextPage = () => {
         <ActiveDisplayContext.Provider value={{ howItWorksDisplay, setHowItWorksDisplay }}>
 
 
-          <WhatWeOfferContainer />
+          {isGreaterThan650px ? <WhatWeOfferContainer /> : <HowItWorksContainer />}
 
           <StudentFirstBanner />
 
-          <HowItWorksContainer />
+          {isGreaterThan650px ? <HowItWorksContainer /> : ""}
+
         </ActiveDisplayContext.Provider>
 
 

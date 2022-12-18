@@ -18,6 +18,7 @@ const StudentFeaturesDetails = () => {
 
   return (
     <>
+    {/* // Create a function that will conditionally render the component based on the media query -> essentially put the below into a function? */}
       {isGreaterThan1080px ?
         <Box display={"flex"} flexDirection={"row"} justifyContent={"space-between"} alignItems={"center"} mt={"5rem"} px={"5%"}>
           <Box display={"flex"} flexDirection={"column"}  alignItems={"flex-start"} width={"20%"} ml={"3%"}>
