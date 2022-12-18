@@ -46,7 +46,7 @@ const Home: NextPage = () => {
 
 
 
-        {/* <CallToActionContainer /> */}
+        <CallToActionContainer />
         {/* <NFTTypesContainer /> */}
 
       </Box>
