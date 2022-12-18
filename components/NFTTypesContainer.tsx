@@ -1,29 +1,39 @@
-import { Box, Container, Heading, Text } from "@chakra-ui/react";
+import { Box, Container, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
-import discord_logo from "../public/discord.svg"
+import education_icon from "../public/educationIcon.png"
 
 
 const NFTTypesContainer = () => {
-    return ( 
-        <Container mt={"10rem"} maxW='container.lg' >
-        <Box display={"flex"} flexDirection={"column"} justifyContent={"flex-start"} alignItems={"center"}>
-          <Heading as='h2' size='3xl' textAlign={"center"} >Types of NFTs</Heading>
-          <Text textStyle='primary' textAlign={"center"} mt={"1rem"} fontSize={"19"} >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </Text>
-        </Box>
-        <Box mb={"5rem"} display={"flex"} flexDirection={"row"} justifyContent={"space-evenly"} gap={"4rem"}>
-          <Box mt={"5rem"} display={"flex"} flexDirection={"column"} bg={"rgba(52, 52, 52, 0.2)"} p={"3rem"} rounded={10}>
-            <Image src={discord_logo} width={"150px"} height={"150px"} />
-            <Heading mt={"3rem"} as='h4' size='l' >Dynamic NFT for students</Heading>
-          </Box>
-          <Box mt={"5rem"} display={"flex"} flexDirection={"column"} bg={"rgba(52, 52, 52, 0.2)"} p={"3rem"} rounded={10}>
-            <Image src={discord_logo} width={"150px"} height={"150px"} />
-            <Heading mt={"3rem"} as='h4' size='l' >Resource NFT for companies</Heading>
-          </Box>
-        </Box>
-
-      </Container>
-     );
-}
  
+  const [isGreaterThan650px] = useMediaQuery([
+    '(min-width: 650px)',
+  ]);
+ 
+  return (
+    <Box display={"flex"} flexDirection={"column"} alignItems={"center"} mt={"10rem"} px={"7%"}>
+      <Box display={"flex"} flexDirection={"column"}>
+        <Heading as='h2' size={{ base: "2xl", sm: "2xl", md: "3xl", lg: "3xl" }} textAlign={"center"} >Types of NFTs</Heading>
+        <Text textStyle='primary' textAlign={"center"} mt={"1rem"} fontSize={"1.3rem"} >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </Text>
+      </Box>
+      <Box  display={"flex"} flexDirection={isGreaterThan650px ? "row" : "column"} justifyContent={isGreaterThan650px ? "space-evenly" : ""} gap={"4rem"} width={isGreaterThan650px ? "70%" : ""} textAlign={"center"}>
+        <Box mt={isGreaterThan650px ? "5rem" : "3rem"} display={"flex"} flexDirection={"column"} alignItems={"center"} bg={"rgba(52, 52, 52, 0.2)"} width={isGreaterThan650px ? "40%" : ""} p={isGreaterThan650px ? "3%" : "10%"} rounded={10}>
+          <Box px={"10%"}>
+            <Image src={education_icon} objectFit={"contain"} />
+          </Box>
+          <Heading mt={"2rem"} as='h4' size='l'>Dynamic NFT for students</Heading>
+        </Box>
+        <Box mt={isGreaterThan650px ? "5rem": ""} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} bg={"rgba(52, 52, 52, 0.2)"} width={isGreaterThan650px ? "40%" : "%"} p={isGreaterThan650px ? "3%" : "10%"} rounded={10}>
+          <Box px={"10%"}>
+            <Image src={education_icon} objectFit={"contain"} />
+          </Box>
+          <Heading mt={"2rem"} as='h4' size='l' >Resource NFT for companies</Heading>
+        </Box>
+      </Box>
+    </Box>
+
+
+  );
+}
+
 export default NFTTypesContainer;

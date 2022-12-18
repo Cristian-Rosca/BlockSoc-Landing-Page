@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Box, Button } from "@chakra-ui/react"
+import { Button, Flex } from "@chakra-ui/react"
 import bs_logo from "../public/bs-logo.png"
 
 
@@ -8,20 +8,19 @@ import bs_logo from "../public/bs-logo.png"
 const Navbar = () => {
     return (
         <nav >
-            <Box display={"flex"} justifyContent={"space-between"} alignItems={"center"} pt={"1rem"} pb={"1rem"} bg={"rgba(0, 0, 0, 0.75)"}>
-                <Box display={"flex"} ml={"2rem"} >
+            <Flex justifyContent={"space-between"} alignItems={"center"}  bg={"rgba(0, 0, 0, 0.7)"}>
+                <Flex maxW={{base: "15%", sm: "20", md: "10%", lg: "5%"}} m={"1rem"} ml={"2rem"}>
                     <Link href="/">
                         <a>
-                            <Image src={bs_logo} height={"75px"} width={"75px"} />
+                            <Image src={bs_logo} objectFit={"contain"} />
                         </a>
                     </Link>
-                </Box>
-                <Box display={"flex"} mr={"2rem"}>
-                    <Button textStyle='primary' width={"auto"} p={"1.5rem"} bgColor={"purple.600"} mr={"2rem"}>Launch dApp</Button>
-                    {/* <Button textStyle='primary' width={"auto"} p={"2rem"} bgColor={"purple.600"}>Join Discord</Button> */}
-                </Box>
+                </Flex>
+                <Flex>
+                    <Button textStyle='primary' bgColor={"purple.600"} mr={"2rem"} rounded={12} p={{base: "1.3rem", md:"1.5rem" }}>Launch dApp</Button>
+                </Flex>
 
-            </Box>
+            </Flex>
         </nav>
 
     );

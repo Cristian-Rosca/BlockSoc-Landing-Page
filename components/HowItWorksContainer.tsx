@@ -20,8 +20,8 @@ const HowItWorksContainer = () => {
   ]);
 
   return (
-    <Container mt={isGreaterThan650px ? "10rem" : "7rem"} maxW='100%'>
-      <Heading as='h2' size={{base: "2xl", sm: '3xl'}} textAlign={"center"}>How it works</Heading>
+    <Container mt={"10rem"} maxW='100%'>
+      <Heading as='h2' size={{ base: "2xl", sm: "2xl", md: "3xl", lg: "3xl" }} textAlign={"center"}>How it works</Heading>
       {howItWorksDisplay === "Students" ?
         <Box display={"flex"} flexDirection={{base: "column", sm: 'row'}} justifyContent={"center"} mt={"1rem"} gap={"1.2rem"}>
           <Button  fontSize={"1.3rem"} textStyle='primary' color={"#D1FF6F"} variant={"link"} onClick={() => setHowItWorksDisplay("Students")}>For Students</Button>
