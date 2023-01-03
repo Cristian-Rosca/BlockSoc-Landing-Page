@@ -1,6 +1,7 @@
 import { Box, Container, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
-import education_icon from "../public/educationIcon.png"
+import studentNft_icon from "../public/studentNft.png"
+import enterpriseNft_icon from "../public/enterpriseNft.png"
 
 
 const NFTTypesContainer = () => {
@@ -19,13 +20,13 @@ const NFTTypesContainer = () => {
       <Box  display={"flex"} flexDirection={isGreaterThan650px ? "row" : "column"} justifyContent={isGreaterThan650px ? "space-evenly" : ""} gap={"4rem"} width={isGreaterThan650px ? "70%" : ""} textAlign={"center"}>
         <Box mt={isGreaterThan650px ? "5rem" : "3rem"} display={"flex"} flexDirection={"column"} alignItems={"center"} bg={"rgba(52, 52, 52, 0.2)"} width={isGreaterThan650px ? "40%" : ""} px={isGreaterThan650px ? "2.5%" : "10%"}  rounded={10}>
           <Box px={"10%"}>
-            <Image src={education_icon} objectFit={"contain"} />
+            <Image src={studentNft_icon} objectFit={"contain"} />
           </Box>
           <Heading my={"2rem"}  as='h4' fontSize={"1.1rem"}>Student NFT</Heading>
         </Box>
         <Box mt={isGreaterThan650px ? "5rem": ""} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} bg={"rgba(52, 52, 52, 0.2)"} width={isGreaterThan650px ? "40%" : "%"} px={isGreaterThan650px ? "2.5%" : "10%"} rounded={10}>
           <Box px={"10%"}>
-            <Image src={education_icon} objectFit={"contain"} />
+            <Image src={enterpriseNft_icon} objectFit={"contain"} />
           </Box>
           <Heading my={"2rem"} as='h4' fontSize={"1.1rem"} >Enterprise NFT</Heading>
         </Box>
