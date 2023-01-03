@@ -1,12 +1,12 @@
 import { Box} from "@chakra-ui/react";
 import Image from "next/image";
-import education_icon from "../../../public/educationIcon.png"
+import bounties_icon from "../../../public/bountiesIcon.png"
 
 
 export const CompanyBountiesIcon = () => {
     return ( 
       <Box>
-      <Image src={education_icon} objectFit={"contain"} />
+      <Image src={bounties_icon} objectFit={"contain"} />
     </Box>
      );
 }

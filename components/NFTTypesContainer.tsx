@@ -21,13 +21,13 @@ const NFTTypesContainer = () => {
           <Box px={"10%"}>
             <Image src={education_icon} objectFit={"contain"} />
           </Box>
-          <Heading my={"2rem"}  as='h4' fontSize={"1.1rem"}>Dynamic NFT for students</Heading>
+          <Heading my={"2rem"}  as='h4' fontSize={"1.1rem"}>Student NFT</Heading>
         </Box>
         <Box mt={isGreaterThan650px ? "5rem": ""} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} bg={"rgba(52, 52, 52, 0.2)"} width={isGreaterThan650px ? "40%" : "%"} px={isGreaterThan650px ? "2.5%" : "10%"} rounded={10}>
           <Box px={"10%"}>
             <Image src={education_icon} objectFit={"contain"} />
           </Box>
-          <Heading my={"2rem"} as='h4' fontSize={"1.1rem"} >Resource NFT for companies</Heading>
+          <Heading my={"2rem"} as='h4' fontSize={"1.1rem"} >Enterprise NFT</Heading>
         </Box>
       </Box>
     </Box>

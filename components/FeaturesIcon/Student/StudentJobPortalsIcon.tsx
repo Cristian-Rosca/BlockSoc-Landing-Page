@@ -1,13 +1,13 @@
 import { Box} from "@chakra-ui/react";
 import Image from "next/image";
-import education_icon from "../../../public/educationIcon.png"
+import job_icon from "../../../public/jobIcon.png"
 
 
 
 export const StudentJobPortalsIcon = () => {
     return ( 
       <Box>
-      <Image src={education_icon} objectFit={"contain"} />
+      <Image src={job_icon} objectFit={"contain"} />
     </Box>
      );
 }

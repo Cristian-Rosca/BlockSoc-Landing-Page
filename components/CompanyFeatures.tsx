@@ -1,6 +1,9 @@
 import { Box, Divider, Text, useMediaQuery, Flex } from "@chakra-ui/react";
 import Image from "next/image";
-import education_icon from "../public/educationIcon.png"
+import bounties_icon from "../public/bountiesIcon.png"
+import exposure_icon from "../public/exposureIcon.png"
+import startUps_icon from "../public/startUpsIcon.png"
+import talent_icon from "../public/talentIcon.png"
 
 const CompanyFeatures = () => {
   
@@ -19,7 +22,7 @@ const CompanyFeatures = () => {
         <Box display={"flex"}>
           <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"10%"} rounded={10} width={"55%"}>
             <Box>
-              <Image src={education_icon} objectFit={"contain"} />
+              <Image src={bounties_icon} objectFit={"contain"} />
             </Box>
             <Text pt={"2rem"} textStyle='secondary' fontSize={"1.3rem"} textAlign={"center"}>Outsource Bounties</Text>
           </Box>
@@ -31,7 +34,7 @@ const CompanyFeatures = () => {
         <Box display={"flex"}>
           <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"10%"} rounded={10} width={"55%"}>
             <Box>
-              <Image src={education_icon} objectFit={"contain"} />
+              <Image src={exposure_icon} objectFit={"contain"} />
             </Box>
             <Text textStyle='secondary' fontSize={"1.3rem"} pt={"2rem"} textAlign={"center"}>Increase Exposure</Text>
           </Box>
@@ -44,7 +47,7 @@ const CompanyFeatures = () => {
       {/* Middle Section */}
       <Box display={"flex"} flexDirection={"column"} bg={"rgba(52, 52, 52, 0.2)"} width={"30%"} alignItems={"center"} justifyContent={"center"} px={"5%"} rounded={10} >
         <Box >
-          <Image src={education_icon} objectFit={"contain"} />
+          <Image src={talent_icon} objectFit={"contain"} />
         </Box>
         <Text textAlign={"center"} textStyle='secondary' fontSize={"1.3rem"} mt={"5rem"} >Find Web3 Native Talent</Text>
 
@@ -58,7 +61,7 @@ const CompanyFeatures = () => {
           </Box>
           <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"10%"} rounded={10} width={"55%"}>
             <Box>
-              <Image src={education_icon} objectFit={"contain"} />
+              <Image src={startUps_icon} objectFit={"contain"} />
             </Box>
             <Text pt={"2rem"} textStyle='secondary' fontSize={"1.3rem"} textAlign={"center"}>Discover Start-ups</Text>
           </Box>
@@ -71,7 +74,7 @@ const CompanyFeatures = () => {
         <Flex flexDirection={"column"} px={"10%"} mt={"3rem"}>
           <Box display={"flex"} flexDirection={"column"} bg={"rgba(52, 52, 52, 0.2)"} alignItems={"center"} justifyContent={"center"} pt={"3rem"} px={"10%"} rounded={10} >
             <Box width={"50%"}>
-              <Image src={education_icon} objectFit={"contain"} />
+              <Image src={talent_icon} objectFit={"contain"} />
             </Box>
             <Text textAlign={"center"} textStyle='secondary' fontSize={"1.3rem"} py={"3rem"} >Find Web3 Native Talent</Text>
           </Box>
@@ -83,7 +86,7 @@ const CompanyFeatures = () => {
               </Box>
               <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"10%"} rounded={10} >
                 <Box>
-                  <Image src={education_icon} objectFit={"contain"} />
+                  <Image src={bounties_icon} objectFit={"contain"} />
                 </Box>
                 <Text pt={"2rem"} textStyle='secondary' fontSize={"1.3rem"} textAlign={"center"}>Outsource Bounties</Text>
               </Box>
@@ -96,7 +99,7 @@ const CompanyFeatures = () => {
               </Box>
               <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"10%"} rounded={10} >
                 <Box>
-                  <Image src={education_icon} objectFit={"contain"} />
+                  <Image src={exposure_icon} objectFit={"contain"} />
                 </Box>
                 <Text pt={"2rem"} textStyle='secondary' fontSize={"1.3rem"} textAlign={"center"}>Increase Exposure</Text>
               </Box>
@@ -108,7 +111,7 @@ const CompanyFeatures = () => {
               </Box>
               <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"10%"} rounded={10} >
                 <Box>
-                  <Image src={education_icon} objectFit={"contain"} />
+                  <Image src={startUps_icon} objectFit={"contain"} />
                 </Box>
                 <Text pt={"2rem"} textStyle='secondary' fontSize={"1.3rem"} textAlign={"center"}>Discover Start-ups</Text>
               </Box>

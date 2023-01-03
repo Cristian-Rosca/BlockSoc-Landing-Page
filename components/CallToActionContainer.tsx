@@ -19,14 +19,14 @@ const CallToActionContainer = () => {
           <Heading mt={"1rem"} as='h4' fontSize={{base: "1.6rem", md: "1.9em"}}>Student?</Heading>
           <Text textStyle='primary' fontSize={"19"}>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
           <Box>
-            <Button textStyle='primary' mt={isGreaterThan650px ? "3rem" : "2rem"} p={{base: "1.4rem", md:"1.5rem" }} bgColor={"purple.600"} rounded={12}>Join Discord</Button>
+            <Button textStyle='primary' mt={isGreaterThan650px ? "3rem" : "2rem"} p={{base: "1.4rem", md:"1.5rem" }} bgColor={"purple.600"} rounded={12}>Register Interest</Button>
           </Box>
         </Box>
         <Box display={"flex"} flexDirection={"column"} width={isGreaterThan650px ? "40%" : "90%"} alignItems={isGreaterThan650px ? "" : "center"} >
           <Heading mt={"1rem"} as='h4' fontSize={{base: "1.6rem", md: "1.9em"}}>Company?</Heading>
           <Text textStyle='primary' fontSize={"19"} >Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
           <Box>
-            <Button textStyle='primary' mt={isGreaterThan650px ? "3rem" : "2rem"} p={{base: "1.4rem", md:"1.5rem" }} bgColor={"purple.600"} rounded={12}>Contact Us</Button>
+            <Button textStyle='primary' mt={isGreaterThan650px ? "3rem" : "2rem"} p={{base: "1.4rem", md:"1.5rem" }} bgColor={"purple.600"} rounded={12}>Register Interest</Button>
           </Box>
         </Box>
       </Box>

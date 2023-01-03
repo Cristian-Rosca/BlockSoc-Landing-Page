@@ -12,9 +12,9 @@ import StudentResumeIcon from "../components/FeaturesIcon/Student/StudentResumeI
 import StudentEducationIcon from "../components/FeaturesIcon/Student/StudentEducationIcon"
 import StudentJobPortalsIcon from "../components/FeaturesIcon/Student/StudentJobPortalsIcon"
 import CompanyBountiesIcon from "../components/FeaturesIcon/Company/CompanyBountiesIcon"
-import CompanyResumeIcon from "../components/FeaturesIcon/Company/CompanyResumeIcon"
-import CompanyEducationIcon from "../components/FeaturesIcon/Company/CompanyEducationIcon"
-import CompanyJobPortalsIcon from "../components/FeaturesIcon/Company/CompanyJobPortalsIcon"
+import CompanyResumeIcon, { CompanyTalentIcon } from "../components/FeaturesIcon/Company/CompanyTalentIcon"
+import CompanyEducationIcon, { CompanyExposureIcon } from "../components/FeaturesIcon/Company/CompanyExposureIcon"
+import CompanyJobPortalsIcon, { CompanyStartUpsIcon } from "../components/FeaturesIcon/Company/CompanyStartUpsIcon"
 
 export const getFeatureInfoSection = (sectionName: string) => {
     switch (sectionName) {
@@ -50,14 +50,14 @@ export const getFeatureInfoSection = (sectionName: string) => {
           return <StudentResumeIcon />
       case "Student_Job_Portals":
         return <StudentJobPortalsIcon />
-      case "Company_Education":
-        return <CompanyEducationIcon />
+      case "Company_Exposure":
+        return <CompanyExposureIcon />
       case "Company_Bounties":
         return <CompanyBountiesIcon />
-      case "Company_Job_Portals":
-        return <CompanyJobPortalsIcon />
-      case "Company_Resume":
-        return <CompanyResumeIcon />
+      case "Company_Talent":
+        return <CompanyTalentIcon />
+      case "Company_Start-ups":
+        return <CompanyStartUpsIcon />
       default:
         return <StudentEducationIcon />
     }

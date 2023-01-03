@@ -17,7 +17,7 @@ const Navbar = () => {
                     </Link>
                 </Flex>
                 <Flex>
-                    <Button textStyle='primary' bgColor={"purple.600"} mr={"2rem"} rounded={12} p={{base: "1.3rem", md:"1.5rem" }}>Launch dApp</Button>
+                    <Button textStyle='primary' bgColor={"purple.600"} mr={"2rem"} rounded={12} p={{base: "1.3rem", md:"1.5rem" }}>Register Interest</Button>
                 </Flex>
 
             </Flex>

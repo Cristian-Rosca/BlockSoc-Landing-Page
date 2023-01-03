@@ -1,6 +1,11 @@
 import { Box, Divider, Flex, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 import education_icon from "../public/educationIcon.png"
+import bounties_icon from "../public/bountiesIcon.png"
+import job_icon from "../public/jobIcon.png"
+import profile_icon from "../public/profileIcon.png"
+
+
 
 
 export const StudentFeatures = () => {
@@ -21,7 +26,7 @@ export const StudentFeatures = () => {
           <Box display={"flex"}>
             <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"10%"} rounded={10} width={"55%"}>
               <Box>
-                <Image src={education_icon} objectFit={"contain"} />
+                <Image src={bounties_icon} objectFit={"contain"} />
               </Box>
               <Text pt={"2rem"} textStyle='secondary' fontSize={"1.3rem"} textAlign={"center"}>Bounties</Text>
             </Box>
@@ -46,7 +51,7 @@ export const StudentFeatures = () => {
         {/* Middle Section */}
         <Box display={"flex"} flexDirection={"column"} bg={"rgba(52, 52, 52, 0.2)"} width={"30%"} alignItems={"center"} justifyContent={"center"} px={"5%"} rounded={10} >
           <Box >
-            <Image src={education_icon} objectFit={"contain"} />
+            <Image src={profile_icon} objectFit={"contain"} />
           </Box>
           <Text textAlign={"center"} textStyle='secondary' fontSize={"1.3rem"} mt={"5rem"} >Build Your Verifiable On-Chain Resume</Text>
 
@@ -60,7 +65,7 @@ export const StudentFeatures = () => {
             </Box>
             <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"10%"} rounded={10} width={"55%"}>
               <Box>
-                <Image src={education_icon} objectFit={"contain"} />
+                <Image src={job_icon} objectFit={"contain"} />
               </Box>
               <Text pt={"2rem"} textStyle='secondary' fontSize={"1.3rem"} textAlign={"center"}>Web3 Jobs</Text>
             </Box>
@@ -73,7 +78,7 @@ export const StudentFeatures = () => {
           <Flex flexDirection={"column"} px={"10%"} mt={"3rem"}>
             <Box display={"flex"} flexDirection={"column"} bg={"rgba(52, 52, 52, 0.2)"} alignItems={"center"} justifyContent={"center"} pt={"3rem"} px={"10%"} rounded={10} >
               <Box width={"50%"}>
-                <Image src={education_icon} objectFit={"contain"} />
+                <Image src={profile_icon} objectFit={"contain"} />
               </Box>
               <Text textAlign={"center"} textStyle='secondary' fontSize={"1.3rem"} py={"3rem"} >Build Your Verifiable On-Chain Resume</Text>
             </Box>
@@ -85,7 +90,7 @@ export const StudentFeatures = () => {
                 </Box>
                 <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"10%"} rounded={10} >
                   <Box>
-                    <Image src={education_icon} objectFit={"contain"} />
+                    <Image src={bounties_icon} objectFit={"contain"} />
                   </Box>
                   <Text pt={"2rem"} textStyle='secondary' fontSize={"1.3rem"} textAlign={"center"}>Bounties</Text>
                 </Box>
@@ -110,7 +115,7 @@ export const StudentFeatures = () => {
                 </Box>
                 <Box bg={"rgba(52, 52, 52, 0.2)"} display={"flex"} flexDirection={"column"} p={"10%"} rounded={10} >
                   <Box>
-                    <Image src={education_icon} objectFit={"contain"} />
+                    <Image src={job_icon} objectFit={"contain"} />
                   </Box>
                   <Text pt={"2rem"} textStyle='secondary' fontSize={"1.3rem"} textAlign={"center"}>Web3 Jobs</Text>
                 </Box>
