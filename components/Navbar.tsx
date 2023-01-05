@@ -17,7 +17,7 @@ const Navbar = () => {
                     </Link>
                 </Flex>
                 <Flex>
-                    <a href={"https://forms.gle/YGwd2Vi81GmJMxTZA"} target="_blank">
+                    <a href={"https://forms.gle/YGwd2Vi81GmJMxTZA"} target="_blank" rel="noreferrer">
                         <Button textStyle='primary' bgColor={"purple.600"} mr={"2rem"} rounded={12} p={{ base: "1.3rem", md: "1.5rem" }}>Register Interest</Button>
                     </a>
                 </Flex>

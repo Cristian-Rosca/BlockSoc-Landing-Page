@@ -19,7 +19,7 @@ const CallToActionContainer = () => {
           <Heading mt={"1rem"} as='h4' fontSize={{ base: "1.6rem", md: "1.9em" }}>Student?</Heading>
           <Text textStyle='primary' fontSize={"19"}>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
           <Box>
-            <a href={"https://forms.gle/YGwd2Vi81GmJMxTZA"} target="_blank">
+            <a href={"https://forms.gle/YGwd2Vi81GmJMxTZA"} target="_blank" rel="noreferrer">
               <Button textStyle='primary' mt={isGreaterThan650px ? "3rem" : "2rem"} p={{ base: "1.4rem", md: "1.5rem" }} bgColor={"purple.600"} rounded={12}>Register Interest</Button>
             </a>
           </Box>
@@ -28,7 +28,7 @@ const CallToActionContainer = () => {
           <Heading mt={"1rem"} as='h4' fontSize={{ base: "1.6rem", md: "1.9em" }}>Company?</Heading>
           <Text textStyle='primary' fontSize={"19"} >Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
           <Box>
-            <a href={"https://forms.gle/YGwd2Vi81GmJMxTZA"} target="_blank">
+            <a href={"https://forms.gle/YGwd2Vi81GmJMxTZA"} target="_blank" rel="noreferrer">
               <Button textStyle='primary' mt={isGreaterThan650px ? "3rem" : "2rem"} p={{ base: "1.4rem", md: "1.5rem" }} bgColor={"purple.600"} rounded={12}>Register Interest</Button>
             </a>
           </Box>
@@ -38,7 +38,7 @@ const CallToActionContainer = () => {
         <Box display={"flex"} flexDirection={"column"} >
           <Heading mt={"1rem"} as='h4' fontSize={isGreaterThan650px ? "1.5rem" : "1.3rem"} marginTop={"2rem"}>Just want to hang out? Join our Discord</Heading>
           <Box display={"flex"} my={"1rem"} justifyContent={isGreaterThan650px ? "" : "center"}>
-            <a target="_blank" href="https://discord.gg/YRKHzc7ymb">
+            <a target="_blank" href="https://discord.gg/YRKHzc7ymb" rel="noreferrer">
               <Image src={discord_logo} height={"50px"} width={"50px"} />
             </a>
           </Box>

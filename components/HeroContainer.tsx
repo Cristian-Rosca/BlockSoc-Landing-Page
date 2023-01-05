@@ -8,7 +8,7 @@ const HeroContainer = () => {
       <Text textStyle='primary' fontSize={"1.2rem"} textAlign={"center"} mt={"2rem"} width={"80%"}>BlockSocDAO is the central Web3 education and upskilling hub
         designed for students interested in learning about and building a career in Web3. BlockSocDAO offers a suite of tools and features that enable web3 native employers to discover, verify, and recruit the best emerging Web3 talent.
       </Text>
-      <a target="_blank" href="https://discord.gg/YRKHzc7ymb">
+      <a target="_blank" href="https://discord.gg/YRKHzc7ymb" rel="noreferrer">
         <Button textStyle='primary' mt={"3rem"} width={"auto"} p={{ base: "1.4rem", md: "1.5rem" }} bgColor={"purple.600"} rounded={12}>Join Our Discord</Button>
       </a>
     </Flex>
