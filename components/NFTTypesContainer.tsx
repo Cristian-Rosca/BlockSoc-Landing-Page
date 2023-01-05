@@ -19,13 +19,13 @@ const NFTTypesContainer = () => {
       </Box>
       <Box  display={"flex"} flexDirection={isGreaterThan650px ? "row" : "column"} justifyContent={isGreaterThan650px ? "space-evenly" : ""} gap={"4rem"} width={isGreaterThan650px ? "70%" : ""} textAlign={"center"}>
         <Box mt={isGreaterThan650px ? "5rem" : "3rem"} display={"flex"} flexDirection={"column"} alignItems={"center"} bg={"rgba(52, 52, 52, 0.2)"} width={isGreaterThan650px ? "40%" : ""} px={isGreaterThan650px ? "2.5%" : "10%"}  rounded={10}>
-          <Box px={"10%"}>
+          <Box px={"10%"} mt={"3rem"}>
             <Image src={studentNft_icon} objectFit={"contain"} />
           </Box>
-          <Heading my={"2rem"}  as='h4' fontSize={"1.1rem"}>Student NFT</Heading>
+          <Heading my={"2rem"} as='h4' fontSize={"1.1rem"}>Student NFT</Heading>
         </Box>
         <Box mt={isGreaterThan650px ? "5rem": ""} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} bg={"rgba(52, 52, 52, 0.2)"} width={isGreaterThan650px ? "40%" : "%"} px={isGreaterThan650px ? "2.5%" : "10%"} rounded={10}>
-          <Box px={"10%"}>
+          <Box px={"10%"} mt={"3rem"}>
             <Image src={enterpriseNft_icon} objectFit={"contain"} />
           </Box>
           <Heading my={"2rem"} as='h4' fontSize={"1.1rem"} >Enterprise NFT</Heading>

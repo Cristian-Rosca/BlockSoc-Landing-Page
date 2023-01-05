@@ -8,8 +8,8 @@ import bs_logo from "../public/bs-logo.png"
 const Navbar = () => {
     return (
         <nav >
-            <Flex justifyContent={"space-between"} alignItems={"center"}  bg={"rgba(0, 0, 0, 0.7)"}>
-                <Flex maxW={{base: "15%", sm: "20", md: "10%", lg: "5%"}} m={"1rem"} ml={"2rem"}>
+            <Flex justifyContent={"space-between"} alignItems={"center"} bg={"rgba(0, 0, 0, 0.7)"}>
+                <Flex maxW={{ base: "15%", sm: "20", md: "10%", lg: "5%" }} m={"1rem"} ml={"2rem"}>
                     <Link href="/">
                         <a>
                             <Image src={bs_logo} objectFit={"contain"} />
@@ -17,7 +17,9 @@ const Navbar = () => {
                     </Link>
                 </Flex>
                 <Flex>
-                    <Button textStyle='primary' bgColor={"purple.600"} mr={"2rem"} rounded={12} p={{base: "1.3rem", md:"1.5rem" }}>Register Interest</Button>
+                    <a href={"https://forms.gle/YGwd2Vi81GmJMxTZA"} target="_blank">
+                        <Button textStyle='primary' bgColor={"purple.600"} mr={"2rem"} rounded={12} p={{ base: "1.3rem", md: "1.5rem" }}>Register Interest</Button>
+                    </a>
                 </Flex>
 
             </Flex>
