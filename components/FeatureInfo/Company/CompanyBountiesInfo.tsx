@@ -4,16 +4,18 @@ import discord_logo from "../../public/discord.svg"
 
 
 export const CompanyBountiesInfo = () => {
-    return ( 
+  return (
 
-          <Box display={"flex"} flexDirection={"column"}>
-            <Heading as='h3' size='xl'>Outsource Bounties</Heading >
-            <Text textStyle='primary' fontSize={"19"} mt={"1rem"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              {<br />} {<br />}
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-          </Box>
+    <Box display={"flex"} flexDirection={"column"}>
+      <Heading as='h3' size='xl'>Outsource Bounties</Heading >
+      <Text textStyle='primary' fontSize={"19"} mt={"1rem"}>Our platform allows you to post tasks to our bounty board, ensuring that they are completed by skilled, web3-native individuals. You can pay for these tasks in crypto, meaning that the process is convenient, fast and secure.
 
-     );
+        <br /><br />
+
+        By outsourcing tasks to the Web3 community through BlockSocDAO, you can free up time to focus on the work that is most important to you.</Text>
+    </Box>
+
+  );
 }
- 
+
 export default CompanyBountiesInfo;

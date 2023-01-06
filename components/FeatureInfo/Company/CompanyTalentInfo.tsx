@@ -4,14 +4,14 @@ import discord_logo from "../../public/discord.svg"
 
 
 export const CompanyTalentInfo = () => {
-    return ( 
-          <Box display={"flex"} flexDirection={"column"} flex={3}>
-            <Heading as='h3' size='xl'>Web3 Native Talent</Heading >
-            <Text textStyle='primary' fontSize={"19"} mt={"1rem"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              {<br />} {<br />}
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-          </Box>
-     );
+  return (
+    <Box display={"flex"} flexDirection={"column"} flex={3}>
+      <Heading as='h3' size='xl'>Web3 Native Talent</Heading >
+      <Text textStyle='primary' fontSize={"19"} mt={"1rem"}>Our platform offers an extensive network of skilled individuals who are ready to take on new challenges in the web3 industry. No matter what skill you're looking for - whether it's programming, UI/UX design, or marketing - you can find it on our platform.
+        <br /><br />
+        All of our members have verifiable on-chain CVs, ensuring trustworthiness and allowing you to easily verify their skills and accomplishments.</Text>
+    </Box>
+  );
 }
- 
+
 export default CompanyTalentInfo;

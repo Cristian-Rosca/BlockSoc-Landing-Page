@@ -4,16 +4,18 @@ import discord_logo from "../../public/discord.svg"
 
 
 export const StudentBountiesInfo = () => {
-    return ( 
+  return (
 
-          <Box display={"flex"} flexDirection={"column"}>
-            <Heading as='h3' size='xl' >Bounties</Heading >
-            <Text textStyle='primary' fontSize={"19"} mt={"1rem"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              {<br />} {<br />}
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-          </Box>
+    <Box display={"flex"} flexDirection={"column"}>
+      <Heading as='h3' size='xl' >Bounties</Heading >
+      <Text textStyle='primary' fontSize={"19"} mt={"1rem"}>BlockSocDAO is committed to helping students gain practical industry experience in Web3. Students can complete industry-relevant bounties and projects set out by our team and partners.
 
-     );
+        <br /><br />
+
+        By completing these bounties, students not only add valuable experience to their resumes, but they also have the opportunity to get paid in crypto for their work. This helps students build their skills and knowledge while also allowing them to get a taste of what it's like to work in Web3.</Text>
+    </Box>
+
+  );
 }
- 
+
 export default StudentBountiesInfo;

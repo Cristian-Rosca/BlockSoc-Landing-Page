@@ -12,9 +12,9 @@ const NFTTypesContainer = () => {
  
   return (
     <Box display={"flex"} flexDirection={"column"} alignItems={"center"} mt={"10rem"} px={"7%"}>
-      <Box display={"flex"} flexDirection={"column"}>
+      <Box display={"flex"} flexDirection={"column"} width={"90%"}>
         <Heading as='h2' size={{ base: "2xl", sm: "2xl", md: "3xl", lg: "3xl" }} textAlign={"center"} >Types of NFTs</Heading>
-        <Text textStyle='primary' textAlign={"center"} mt={"1rem"} fontSize={"1.3rem"} >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <Text textStyle='primary' textAlign={"center"} mt={"1rem"} fontSize={"1.3rem"} >Access to the platform can be gained by owning one of two NFT types: Student NFTs and Enterprise NFTs. 
         </Text>
       </Box>
       <Box  display={"flex"} flexDirection={isGreaterThan650px ? "row" : "column"} justifyContent={isGreaterThan650px ? "space-evenly" : ""} gap={"4rem"} width={isGreaterThan650px ? "70%" : ""} textAlign={"center"}>

@@ -4,16 +4,18 @@ import discord_logo from "../../public/discord.svg"
 
 
 export const CompanyExposureInfo = () => {
-    return ( 
+  return (
 
-          <Box display={"flex"} flexDirection={"column"} >
-            <Heading as='h3' size='xl'>Gain Exposure</Heading >
-            <Text textStyle='primary' fontSize={"19"} mt={"1rem"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              {<br />} {<br />}
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-          </Box>
+    <Box display={"flex"} flexDirection={"column"} >
+      <Heading as='h3' size='xl'>Gain Exposure</Heading >
+      <Text textStyle='primary' fontSize={"19"} mt={"1rem"}>By partnering with BlockSocDAO, you can tap into the power of our vibrant community of web3-native students and professionals. As a partner, our entire community will learn about your business or project, giving you the opportunity to onboard new users and build your brand.
 
-     );
+        <br /><br />
+
+        With a strong presence on our platform, you can connect with top talent and showcase your business or project to a highly engaged audience.</Text>
+    </Box>
+
+  );
 }
- 
+
 export default CompanyExposureInfo;

@@ -4,18 +4,19 @@ import discord_logo from "../../public/discord.svg"
 
 
 export const CompanyStartUpsInfo = () => {
-    return ( 
-        
-         
-          <Box display={"flex"} flexDirection={"column"} flex={3}>
-            <Heading as='h3' size='xl'>Find New Start-Ups</Heading >
-            <Text textStyle='primary' fontSize={"19"} mt={"1rem"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              {<br />} {<br />}
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-          </Box>
+  return (
 
 
-     );
+    <Box display={"flex"} flexDirection={"column"} flex={3}>
+      <Heading as='h3' size='xl'>Find New Start-Ups</Heading >
+      <Text textStyle='primary' fontSize={"19"} mt={"1rem"}>By owning an Enterprise NFT from BlockSocDAO, you'll get exclusive access to the blockchain startups and projects created by our talented community of web3 professionals and students. 
+      
+        <br /><br />
+      This means that you'll be among the first to see the innovative ideas and technologies that are being developed by our members, giving you a unique opportunity to get in on the ground floor of potentially game-changing projects.</Text>
+    </Box>
+
+
+  );
 }
- 
+
 export default CompanyStartUpsInfo;

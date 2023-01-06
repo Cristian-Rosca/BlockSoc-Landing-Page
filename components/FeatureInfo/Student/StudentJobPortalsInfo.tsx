@@ -4,14 +4,14 @@ import discord_logo from "../../public/discord.svg"
 
 
 export const StudentJobPortals = () => {
-    return ( 
-          <Box display={"flex"} flexDirection={"column"}>
-            <Heading as='h3' size='xl'>Web3 Jobs</Heading >
-            <Text textStyle='primary' fontSize={"19"} mt={"1rem"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              {<br />} {<br />}
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-          </Box>
-     );
+  return (
+    <Box display={"flex"} flexDirection={"column"}>
+      <Heading as='h3' size='xl'>Web3 Jobs</Heading >
+      <Text textStyle='primary' fontSize={"19"} mt={"1rem"}>Our ultimate goal is to provide learners with a clear pathway to gaining valuable skills and acquiring a job in Web3. The platform is designed to help students stand out and get noticed by top web3 employers.
+        <br /><br />
+        With a strong on-chain CV, students give themselves the best possible chance of landing their dream job. Join our community and begin your journey today.  </Text>
+    </Box>
+  );
 }
- 
+
 export default StudentJobPortals;
