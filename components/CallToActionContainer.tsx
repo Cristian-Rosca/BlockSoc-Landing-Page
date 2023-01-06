@@ -26,7 +26,7 @@ const CallToActionContainer = () => {
         </Box>
         <Box display={"flex"} flexDirection={"column"} width={isGreaterThan650px ? "40%" : "90%"} alignItems={isGreaterThan650px ? "" : "center"} >
           <Heading mt={"1rem"} as='h4' fontSize={{ base: "1.6rem", md: "1.9em" }}>Company?</Heading>
-          <Text textStyle='primary' fontSize={"19"} >If you're a company looking to stay ahead of the curve in the exciting world of web3, we invite you to become a partner. By partnering with us, you'll have access to a highly-engaged and skilled community of web3-native professionals, making it easier for you to recruit top talent and outsource bounties. Contact us today to learn more about partnering with us.</Text>
+          <Text textStyle='primary' fontSize={"19"} >If you&apos;re a company looking to stay ahead of the curve in the exciting world of web3, we invite you to become a partner. By partnering with us, you&apos;ll have access to a highly-engaged and skilled community of web3-native professionals, making it easier for you to recruit top talent and outsource bounties. Contact us today to learn more about partnering with us.</Text>
           <Box>
             <a href={"https://forms.gle/YGwd2Vi81GmJMxTZA"} target="_blank" rel="noreferrer">
               <Button textStyle='primary' mt={isGreaterThan650px ? "3rem" : "2rem"} p={{ base: "1.4rem", md: "1.5rem" }} bgColor={"purple.600"} rounded={12}>Register Interest</Button>

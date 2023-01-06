@@ -12,7 +12,7 @@ export const StudentBountiesInfo = () => {
 
         <br /><br />
 
-        By completing these bounties, students not only add valuable experience to their resumes, but they also have the opportunity to get paid in crypto for their work. This helps students build their skills and knowledge while also allowing them to get a taste of what it's like to work in Web3.</Text>
+        By completing these bounties, students not only add valuable experience to their resumes, but they also have the opportunity to get paid in crypto for their work. This helps students build their skills and knowledge while also allowing them to get a taste of what it&apos;s like to work in Web3.</Text>
     </Box>
 
   );
